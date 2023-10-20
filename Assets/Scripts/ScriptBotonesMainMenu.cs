@@ -10,4 +10,9 @@ public class ScriptBotonesMainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void SalirJuego()
+    {
+        Application.Quit();
+    }
+
 }
