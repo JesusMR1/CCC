@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public abstract class Node : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public abstract class Node : MonoBehaviour
         Arrive();
     }
 
-    void Arrive()
+    public void Arrive()
     {
         if(GameManager.ins.currentNode != null) 
         {
@@ -32,8 +33,9 @@ public abstract class Node : MonoBehaviour
         GameManager.ins.currentNode = this;
 
         //Mover la camara
-        Camera.main.transform.position = camaraPosition.position;
-        Camera.main.transform.rotation = camaraPosition.rotation;
+
+        GameManager.ins.camRig.AlignTo(camaraPosition);
+        
 
         //Apagar colliders
         if (col != null)
