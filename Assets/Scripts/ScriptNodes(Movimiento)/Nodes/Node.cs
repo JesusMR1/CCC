@@ -11,9 +11,10 @@ public abstract class Node : MonoBehaviour
     [HideInInspector]
     public Collider col;
 
-    private void Start()
+    private void Awake()
     {
         col = GetComponent<Collider>();
+        col.enabled = false;
     }
 
     private void OnMouseDown()
@@ -21,7 +22,7 @@ public abstract class Node : MonoBehaviour
         Arrive();
     }
 
-    public void Arrive()
+    public virtual void Arrive()
     {
         if(GameManager.ins.currentNode != null) 
         {
@@ -44,23 +45,22 @@ public abstract class Node : MonoBehaviour
         }
 
         //Prender colliders visibles
-        foreach (Node node in reachableNodes )
-        {
-            if(node.col != null)
-            {
-                node.col.enabled = true;
-            }
-        }
+        SetReachablesNodes(true);
     }
 
-    public void Leave()
+    public virtual void Leave()
     {
         //Apagar colliders visibles
+        SetReachablesNodes(false);
+    }
+
+    public void SetReachablesNodes(bool set)
+    {
         foreach (Node node in reachableNodes)
         {
             if (node.col != null)
             {
-                node.col.enabled = false;
+                node.col.enabled = set;
             }
         }
     }
