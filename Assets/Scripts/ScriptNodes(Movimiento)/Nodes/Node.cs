@@ -60,7 +60,20 @@ public abstract class Node : MonoBehaviour
         {
             if (node.col != null)
             {
-                node.col.enabled = set;
+                if (node.GetComponent<PreRequisitos>() && node.GetComponent<PreRequisitos>().nodeAccess )
+                {
+                    if (node.GetComponent<PreRequisitos>().Complete)
+                    {
+                        node.col.enabled = set;
+                    }
+                }
+
+                else
+                {
+                    node.col.enabled = set;
+                }
+
+                
             }
         }
     }

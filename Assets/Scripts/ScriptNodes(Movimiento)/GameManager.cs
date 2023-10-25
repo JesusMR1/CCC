@@ -11,10 +11,15 @@ public class GameManager : MonoBehaviour
     public Node startingNode;
 
     public CamaraRig camRig;
-    
+
+    public InventoryDisplay invDisplay;
+
 
     [HideInInspector]
     public Node currentNode;
+
+    public Item itemHeld;
+
 
     private void Awake()
     {

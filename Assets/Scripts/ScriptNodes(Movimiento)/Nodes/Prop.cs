@@ -21,10 +21,15 @@ public class Prop : Node
 
         base.Arrive();
 
-        //Hacer el objeto interactuable
+        //Hacer el objeto interactuable, si se cumple el requisito
 
-        if (inter != null)
+        if (inter != null)  
         {
+            if (GetComponent<PreRequisitos>() && GetComponent<PreRequisitos>().Complete)
+            {
+                return;
+            }
+
             col.enabled = true;
             inter.enabled = true;
         }
