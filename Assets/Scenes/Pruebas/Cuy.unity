@@ -453,7 +453,6 @@ GameObject:
   - component: {fileID: 58381279}
   - component: {fileID: 58381278}
   - component: {fileID: 58381280}
-  - component: {fileID: 58381281}
   m_Layer: 0
   m_Name: Maquina
   m_TagString: Untagged
@@ -528,20 +527,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pic: {fileID: 21300000, guid: 63be292c6713ca140851af4a382539fb, type: 3}
---- !u!114 &58381281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58381276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f935d0b1ac4e774ea7453495d0fab97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myItem:
-    itemName: Pista 1 jaja
 --- !u!1 &69356547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,6 +1298,7 @@ MonoBehaviour:
   reachableNodes:
   - {fileID: 58381278}
   - {fileID: 288008987}
+  - {fileID: 784280236}
   col: {fileID: 0}
 --- !u!65 &301860804
 BoxCollider:
@@ -2163,6 +2149,8 @@ GameObject:
   - component: {fileID: 784280234}
   - component: {fileID: 784280233}
   - component: {fileID: 784280232}
+  - component: {fileID: 784280236}
+  - component: {fileID: 784280235}
   m_Layer: 0
   m_Name: Modelo_TarroRojo
   m_TagString: Untagged
@@ -2256,6 +2244,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784280230}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &784280235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784280230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f935d0b1ac4e774ea7453495d0fab97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myItem:
+    itemName: pista 1
+--- !u!114 &784280236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784280230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b32b13abbef80df41af0c7d260c7d501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camaraPosition: {fileID: 1929897712}
+  reachableNodes: []
+  col: {fileID: 0}
+  loc: {fileID: 301860803}
 --- !u!4 &842292691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6379906126135670293, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
