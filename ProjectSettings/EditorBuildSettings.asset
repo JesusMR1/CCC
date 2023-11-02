@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuV2.unity
     guid: 58e90a65ab6aadd458590c3beac6fbdb
   - enabled: 1
-    path: Assets/Scenes/Pruebas/Cuy.unity
+    path: Assets/Scenes/Pruebas/Chuy/Cuy.unity
     guid: 4763767e8e9f9274bb386a7f5a7e696f
   - enabled: 1
     path: Assets/Scenes/Pruebas/Lebron.unity
