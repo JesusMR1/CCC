@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6379906126135670293}
-  - component: {fileID: 5494350818928863159}
   - component: {fileID: 3920838814226944486}
+  - component: {fileID: 5494350818928863159}
   m_Layer: 0
   m_Name: LocationPrefab
   m_TagString: Untagged
@@ -34,21 +34,6 @@ Transform:
   - {fileID: 2524130152602678823}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5494350818928863159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373980298109327298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e06fab333020c4db169653e5befc5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camaraPosition: {fileID: 2524130152602678823}
-  reachableNodes: []
-  col: {fileID: 0}
 --- !u!65 &3920838814226944486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70,6 +55,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.5, y: 2, z: 3}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &5494350818928863159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373980298109327298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e06fab333020c4db169653e5befc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camaraPosition: {fileID: 2524130152602678823}
+  reachableNodes: []
+  col: {fileID: 0}
 --- !u!1 &8490714185328860802
 GameObject:
   m_ObjectHideFlags: 0
