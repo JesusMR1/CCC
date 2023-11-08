@@ -1441,7 +1441,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1715653872}
         m_TargetAssemblyTypeName: ScriptBotonesMainMenu, Assembly-CSharp
-        m_MethodName: Jugar
+        m_MethodName: Cinematica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
