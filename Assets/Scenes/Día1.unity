@@ -1789,12 +1789,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89772da5f081b3a43b0cfa6827983c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prop: {fileID: 0}
   lineasDialogo:
   - Hola esto es un texto
   - No se que poner
   - Buenas Noches
   panelDialogo: {fileID: 1552731810}
   textoDialogo: {fileID: 38697705}
+  botonEstacion: {fileID: 1925922693}
+  jefe: {fileID: 554074080}
 --- !u!1 &579921633
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,7 +5298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1925922694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5305,7 +5308,7 @@ RectTransform:
   m_GameObject: {fileID: 1925922693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1943911833}
@@ -5313,7 +5316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: 441}
+  m_AnchoredPosition: {x: 2, y: 166.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925922695

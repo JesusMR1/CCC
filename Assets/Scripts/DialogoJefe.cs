@@ -12,13 +12,23 @@ public class DialogoJefe : MonoBehaviour
     [SerializeField] private GameObject panelDialogo;
     [SerializeField] private TMP_Text textoDialogo;
 
+    public GameObject botonEstacion;
+    public GameObject jefe;
+
+
     private bool dialogoActivo;
     private int dialogoIndex;
 
     private void Start()
     {
-        dialogoActivo = false;
+        
     }
+
+    private void Update()
+    {
+        Deact();
+    }
+
     private void OnMouseDown()
     {
             if (!dialogoActivo)
@@ -57,8 +67,24 @@ public class DialogoJefe : MonoBehaviour
         {
             dialogoActivo = false;
             panelDialogo.SetActive(false);
-
-            
         }
+
+       
+    }
+
+    private void Deact()
+    {
+        if (dialogoActivo == false && Input.GetKeyUp(KeyCode.Escape))
+        {
+            StartCoroutine(Desaparecer());
+        }
+    }
+
+    IEnumerator Desaparecer()
+    {
+        yield return new WaitForSeconds(0.5f);
+        botonEstacion.SetActive(true);
+        jefe.SetActive(false);
+     
     }
 }

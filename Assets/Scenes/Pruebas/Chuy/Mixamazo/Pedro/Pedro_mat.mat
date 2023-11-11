@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_Color_Texture:
-        m_Texture: {fileID: 2800000, guid: e931ebdd4e4ac694683ac34a955a8cd6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 57ef2524a22368c4fa250c1be89b9df4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -65,11 +65,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Texture_Map:
-        m_Texture: {fileID: 2800000, guid: 99b806f04a234154c8ef44f43ec376b1, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd96b283bd744e14bbcbdd8af73016a5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ORM_texture:
-        m_Texture: {fileID: 2800000, guid: 6a7d054e0b9f321409f5771fe0d59e3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc284085b26e8804e84e15ba846ee25b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -104,10 +104,11 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Base_Roughness: 0.838
+    - _Base_Roughness: 0.81
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Color_conntrast: 1
@@ -124,8 +125,8 @@ Material:
     - _GlossyReflections: 0
     - _Has_Ao: 1
     - _Has_color_texture: 1
-    - _Has_normal_map_texture: 1
-    - _Hue: 78
+    - _Has_normal_map_texture: 0
+    - _Hue: 1
     - _Metal_1: 0
     - _Metallic: 0
     - _No_metalic: 0
@@ -136,7 +137,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Roughness_Blend: 1
+    - _Roughness_Blend: 0.8
     - _Roughness_black: 0
     - _Roughness_texture_contrast: 1
     - _Roughness_white: 1
@@ -147,15 +148,17 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
-    - _color: 1
+    - _ZWriteControl: 0
+    - _color: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Solid_color: {r: 0.24999997, g: 0.31249997, b: 0.5, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tiling_and_Offset: {r: 46.56, g: 54.79, b: 0, a: 0}
+    - _Tiling_and_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4719577825291026601
 MonoBehaviour:
