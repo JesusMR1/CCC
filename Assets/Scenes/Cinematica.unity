@@ -1237,14 +1237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69f24c1ba9fee14782e2b604417decf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  botonPlay: {fileID: 0}
   anim: {fileID: 0}
   animations:
   - {fileID: 7400000, guid: 45b7d013e7b39074c97b126d99ada325, type: 2}
   - {fileID: 7400000, guid: 2b99fc2a4a7761b4bbb4b0b9e196e098, type: 2}
   - {fileID: 7400000, guid: 9147e2edd88de7f4fa479f63ba947dae, type: 2}
   - {fileID: 7400000, guid: 0defb52c83975db4cb407a8cbd99550c, type: 2}
-  - {fileID: 7400000, guid: 3c11f625435ba7a4db088e4cfd958a14, type: 2}
+  - {fileID: 7400000, guid: 66c369c89e60be1429b083f05e4f664a, type: 2}
 --- !u!65 &2091695139
 BoxCollider:
   m_ObjectHideFlags: 0
