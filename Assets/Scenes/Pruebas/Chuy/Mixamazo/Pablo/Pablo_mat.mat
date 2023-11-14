@@ -158,7 +158,7 @@ Material:
     - _GlossyReflections: 0
     - _Has_Ao: 1
     - _Has_color_texture: 1
-    - _Has_normal_map_texture: 0
+    - _Has_normal_map_texture: 1
     - _Hue: 78
     - _Metal_1: 0
     - _Metallic: 0
