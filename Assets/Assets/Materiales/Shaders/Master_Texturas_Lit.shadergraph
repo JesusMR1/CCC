@@ -3092,7 +3092,7 @@
     "m_TessellationBackFaceCullEpsilon": -0.25,
     "m_TessellationMaxDisplacement": 0.009999999776482582,
     "m_Version": 1,
-    "inspectorFoldoutMask": 0
+    "inspectorFoldoutMask": 1
 }
 
 {
@@ -5231,9 +5231,9 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "r": 0.25,
-        "g": 0.3125,
-        "b": 0.5,
+        "r": 0.8693485260009766,
+        "g": 0.8855019807815552,
+        "b": 0.9339622855186462,
         "a": 0.0
     },
     "isMainColor": false,
