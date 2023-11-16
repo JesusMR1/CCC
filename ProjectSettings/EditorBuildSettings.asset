@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cinematica.unity
     guid: ba329f98f08f99a43b28ee8deb8ecda1
   - enabled: 1
-    path: Assets/Scenes/Pruebas/Chuy/Cuy.unity
-    guid: 4763767e8e9f9274bb386a7f5a7e696f
-  - enabled: 1
-    path: Assets/Scenes/Pruebas/Lebron.unity
-    guid: b61eceb3f9a3b7c49bef084f125812c9
+    path: "Assets/Scenes/D\xEDa1.unity"
+    guid: 413c77f2c12dcc94390f0749505e27b7
   m_configObjects: {}
