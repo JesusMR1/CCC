@@ -2116,6 +2116,7 @@ GameObject:
   - component: {fileID: 696719834}
   - component: {fileID: 696719833}
   - component: {fileID: 696719832}
+  - component: {fileID: 696719835}
   m_Layer: 0
   m_Name: Modelo_TarroVerde
   m_TagString: Untagged
@@ -2209,6 +2210,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696719830}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &696719835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696719830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013f42887c87293449a1962a5307848b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentageText: {fileID: 0}
+  increaseSpeed: 50
 --- !u!1 &697475807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,6 +2385,7 @@ GameObject:
   - component: {fileID: 784280232}
   - component: {fileID: 784280236}
   - component: {fileID: 784280235}
+  - component: {fileID: 784280237}
   m_Layer: 0
   m_Name: Modelo_TarroRojo
   m_TagString: Untagged
@@ -2493,6 +2509,20 @@ MonoBehaviour:
   reachableNodes: []
   col: {fileID: 0}
   loc: {fileID: 301860803}
+--- !u!114 &784280237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784280230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013f42887c87293449a1962a5307848b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentageText: {fileID: 0}
+  increaseSpeed: 50
 --- !u!4 &842292691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6379906126135670293, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
