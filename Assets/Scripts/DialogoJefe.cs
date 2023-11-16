@@ -14,6 +14,7 @@ public class DialogoJefe : MonoBehaviour
 
     public GameObject botonEstacion;
     public GameObject jefe;
+    public GameObject Tiempo;
 
 
     private bool dialogoActivo;
@@ -82,8 +83,9 @@ public class DialogoJefe : MonoBehaviour
 
     IEnumerator Desaparecer()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.55f);
         botonEstacion.SetActive(true);
+        Tiempo.SetActive(true);
         jefe.SetActive(false);
      
     }
