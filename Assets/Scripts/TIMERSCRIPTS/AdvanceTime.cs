@@ -15,6 +15,10 @@ public class AdvanceTime : MonoBehaviour
 
     private bool isTimeLimitReached = false;
 
+    public Animator anim;
+
+
+
     private void Start()
     {
         timeHours = startingTime;
@@ -53,6 +57,7 @@ public class AdvanceTime : MonoBehaviour
             yield return new WaitForSeconds(3f);
             timeText.gameObject.SetActive(false);
             isTimeLimitReached = true;
+            anim
         }
     }
 }
