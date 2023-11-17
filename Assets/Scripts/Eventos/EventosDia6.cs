@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EventosDia3 : MonoBehaviour
+public class EventosDia6 : MonoBehaviour
 {
     public Animator anim;
 
@@ -60,6 +60,6 @@ public class EventosDia3 : MonoBehaviour
 
     public void SiguienteDia()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(9);
     }
 }
