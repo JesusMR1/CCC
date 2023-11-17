@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class EventosDia2 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Animator anim;
+
     void Start()
     {
         

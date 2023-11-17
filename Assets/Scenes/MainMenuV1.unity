@@ -192,6 +192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banca (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96e2044b9dfa5354bb947253de3bcf2a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -273,10 +278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -359,7 +364,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &213571447
 Transform:
@@ -883,6 +888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poste
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd6b5b2d17734204397f71232d51b5d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -912,7 +922,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &450457294
 Transform:
@@ -1022,7 +1032,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &481154413
 Transform:
@@ -1694,10 +1704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1786,10 +1796,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3581288327982666395, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
       propertyPath: m_Name
       value: Arbol 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7600687372992132772, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
@@ -2083,10 +2103,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3581288327982666395, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
       propertyPath: m_Name
       value: Arbol 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7600687372992132772, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
@@ -2162,10 +2192,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3523097055278736801, guid: f7d2dae1652c89d4c8359a40c27c5e87,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f7d2dae1652c89d4c8359a40c27c5e87,
         type: 3}
       propertyPath: m_Name
       value: Arbusto
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f7d2dae1652c89d4c8359a40c27c5e87,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1598646256041177609, guid: f7d2dae1652c89d4c8359a40c27c5e87,
         type: 3}
@@ -2251,6 +2291,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Este es el bueno de la tiendita
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b161fa2dc21d34d4d9316c4ff5f7eae0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2320,10 +2365,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3581288327982666395, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
       propertyPath: m_Name
       value: Arbol 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7600687372992132772, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
@@ -2532,10 +2587,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212571365969511976, guid: 7661af18ec1cabb45b64ee3bd3707449,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7661af18ec1cabb45b64ee3bd3707449,
         type: 3}
       propertyPath: m_Name
       value: Arbol 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7661af18ec1cabb45b64ee3bd3707449,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7619359528177182438, guid: 7661af18ec1cabb45b64ee3bd3707449,
         type: 3}
@@ -2996,6 +3061,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arbol 4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 786fe52ef15448f439b3df777c33b871,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8020303834923227928, guid: 786fe52ef15448f439b3df777c33b871,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3198,10 +3273,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3581288327982666395, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
       propertyPath: m_Name
       value: Arbol 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7600687372992132772, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
@@ -3233,7 +3318,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1043974046
 Transform:
@@ -3491,6 +3576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arbusto (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f7d2dae1652c89d4c8359a40c27c5e87,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1598646256041177609, guid: f7d2dae1652c89d4c8359a40c27c5e87,
         type: 3}
@@ -4170,6 +4260,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6170228275947299240, guid: 6ac450a56975df5419fb97d57bd290c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -2740601700225640898, guid: 6ac450a56975df5419fb97d57bd290c8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4179,6 +4274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arbol 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ac450a56975df5419fb97d57bd290c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4446,7 +4546,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1676958898
 Transform:
@@ -4484,7 +4584,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &1685323105
 Transform:
@@ -5623,6 +5723,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34b72d476443a134492c0c8d604c5109,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5692,10 +5797,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3581288327982666395, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
       propertyPath: m_Name
       value: Arbol 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14abd52fc656d8e4faff2473bf21ed83,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7600687372992132772, guid: 14abd52fc656d8e4faff2473bf21ed83,
         type: 3}
@@ -6199,7 +6314,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2137593152
 Transform:
@@ -6287,10 +6402,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

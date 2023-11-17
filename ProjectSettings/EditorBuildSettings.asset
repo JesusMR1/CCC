@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/D\xEDa1.unity"
     guid: 413c77f2c12dcc94390f0749505e27b7
+  - enabled: 1
+    path: "Assets/Scenes/D\xEDa2.unity"
+    guid: 69f6c2a00cdc22e40bdc4ebcefb81ccc
   m_configObjects: {}
