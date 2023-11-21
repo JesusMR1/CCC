@@ -3,26 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AdvanceTime : MonoBehaviour
 {
     [SerializeField] private int startingTime;
     [SerializeField] private float timeUntilHourChange;
     [SerializeField] private TMP_Text timeText;
-    [SerializeField] private int timeLimit;
+    [SerializeField] public int timeLimit;
 
     [NonSerialized] public int timeHours;
 
     private bool isTimeLimitReached = false;
-
-    private void Start()
+    public void Start()
     {
         timeHours = startingTime;
 
         StartCoroutine(AdvanceHourOverTime());
     }
 
-    private void Update()
+    public void Update()
     {
         if (!isTimeLimitReached)
         {
@@ -30,7 +30,7 @@ public class AdvanceTime : MonoBehaviour
         }
     }
 
-    private IEnumerator AdvanceHourOverTime()
+    public IEnumerator AdvanceHourOverTime()
     {
         yield return new WaitForSeconds(timeUntilHourChange);
 
