@@ -18,24 +18,22 @@ public sealed class DotsEffect : CustomPostProcessVolumeComponent, IPostProcessC
     public ClampedFloatParameter dotsCutoff = new ClampedFloatParameter(0.4f, 0, 1, true);
     public Vector2Parameter scrollDirection = new Vector2Parameter(new Vector2());
 
-
-    Material m_Material;
-
-    public bool IsActive() => m_Material != null && intensity.value > 0f;
-
-    // Do not forget to add this post process in the Custom Post Process Orders list (Project Settings > Graphics > HDRP Global Settings).
+    public bool IsActive()
+    {
+        return true;
+    }
+    public bool IsTileCompatible()
+    {
+        return false;
+    }
     public override CustomPostProcessInjectionPoint injectionPoint => CustomPostProcessInjectionPoint.AfterPostProcess;
 
-    const string kShaderName = "Hidden/Shader/DotsEffect";
+    [SerializeField]
+    private Shader m_dotsShader;
+    [SerializeField]
+    private Shader m_compositeShader;
 
-    public override void Setup()
-    {
-        if (Shader.Find(kShaderName) != null)
-            m_Material = new Material(Shader.Find(kShaderName));
-        else
-            Debug.LogError($"Unable to find shader '{kShaderName}'. Post Process Volume DotsEffect is unable to load.");
-    }
-
+    Material m_Material;
     public override void Render(CommandBuffer cmd, HDCamera camera, RTHandle source, RTHandle destination)
     {
         if (m_Material == null)
@@ -46,8 +44,25 @@ public sealed class DotsEffect : CustomPostProcessVolumeComponent, IPostProcessC
         HDUtils.DrawFullScreen(cmd, m_Material, destination, shaderPassId: 0);
     }
 
+    //public bool IsActive() => m_Material != null && intensity.value > 0f;
+
+    // Do not forget to add this post process in the Custom Post Process Orders list (Project Settings > Graphics > HDRP Global Settings).
+
+
+    //const string kShaderName = "Hidden/Shader/DotsEffect";
+
+    /*public override void Setup()
+    {
+        if (Shader.Find(kShaderName) != null)
+            m_Material = new Material(Shader.Find(kShaderName));
+        else
+            Debug.LogError($"Unable to find shader '{kShaderName}'. Post Process Volume DotsEffect is unable to load.");
+    }
+
+   
+
     public override void Cleanup()
     {
         CoreUtils.Destroy(m_Material);
-    }
+    }*/
 }
