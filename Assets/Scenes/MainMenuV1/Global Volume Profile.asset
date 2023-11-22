@@ -234,10 +234,10 @@ MonoBehaviour:
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.684
+    m_Value: 0.788
   m_MaxSamples:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 13
 --- !u!114 &6655368828883993614
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -250,28 +250,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 3
   threshold:
     m_OverrideState: 0
     m_Value: 0
   intensity:
     m_OverrideState: 0
-    m_Value: 0.462
+    m_Value: 1
   scatter:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.108
   tint:
     m_OverrideState: 0
-    m_Value: {r: 0.21616231, g: 0.48328683, b: 0.8679245, a: 1}
+    m_Value: {r: 0.4716981, g: 0.06852971, b: 0.080998376, a: 1}
   dirtTexture:
     m_OverrideState: 0
-    m_Value: {fileID: 2800000, guid: df3c50063466bea4a9b5b0064947b8a3, type: 3}
+    m_Value: {fileID: 0}
   dirtIntensity:
     m_OverrideState: 0
-    m_Value: 18.1
+    m_Value: 0
   anamorphic:
     m_OverrideState: 0
     m_Value: 1
