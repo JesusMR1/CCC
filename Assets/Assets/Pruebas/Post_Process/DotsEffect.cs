@@ -17,7 +17,7 @@ public sealed class DotsEffect : CustomPostProcessVolumeComponent, IPostProcessC
     public IntParameter dotsDensity = new IntParameter(10, true);
     public ClampedFloatParameter dotsCutoff = new ClampedFloatParameter(0.4f, 0, 1, true);
     public Vector2Parameter scrollDirection = new Vector2Parameter(new Vector2());
-
+    
     public bool IsActive()
     {
         return true;
