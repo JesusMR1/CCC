@@ -5,7 +5,11 @@
     "m_Properties": [],
     "m_Keywords": [],
     "m_Dropdowns": [],
-    "m_CategoryData": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "88eabe61ee2d49af9561c348899d4b0c"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "08d9202bee964824b599506c9a1ea807"
@@ -24,6 +28,9 @@
         },
         {
             "m_Id": "5e166cfede2c4eeda68ea40e004f0362"
+        },
+        {
+            "m_Id": "b0bb3586fe4049878fa02f6f6199173e"
         }
     ],
     "m_GroupDatas": [],
@@ -304,6 +311,14 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "88eabe61ee2d49af9561c348899d4b0c",
+    "m_Name": "",
+    "m_ChildObjectList": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "8993e40a1f9c4a2e813c9a1a9cf96c39",
     "m_Group": {
@@ -381,6 +396,42 @@
     "m_Value": 1.0,
     "m_DefaultValue": 1.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.CustomFunctionNode",
+    "m_ObjectId": "b0bb3586fe4049878fa02f6f6199173e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Custom Function",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -423.2000427246094,
+            "y": 17.59999656677246,
+            "width": 208.0,
+            "height": 245.6000213623047
+        }
+    },
+    "m_Slots": [],
+    "synonyms": [
+        "code",
+        "HLSL"
+    ],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SourceType": 0,
+    "m_FunctionName": "Enter function name here...",
+    "m_FunctionSource": "655b1a26db721714f8461763d200f74f",
+    "m_FunctionBody": "Enter function body here..."
 }
 
 {
