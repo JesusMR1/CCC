@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Tiendatoon
-  m_Shader: {fileID: -6465566751694194690, guid: 99197c6b63c14ed4b8e8c5c05095bf3d,
+  m_Shader: {fileID: -6465566751694194690, guid: 328c574a00b3a484a821cc22027798b8,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,6 +51,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: afd216c618accda41b79fd8ecbe9e7f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Base_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 2800000, guid: d8d5da570eb996d489691f497c9e89ed, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -60,6 +64,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowandLightTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_a37bfdb0807a4b6a8b95bf890565a1d1_Out_0_Texture2D:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -83,6 +91,7 @@ Material:
     - _AlphaSrcBlend: 1
     - _Base_Roughness: 0.15
     - _BlendMode: 0
+    - _Circle_Density: 8.69
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
@@ -112,6 +121,8 @@ Material:
     - _Roughness_Blend: 1
     - _Roughness_Texture_Contrast: 1
     - _Roughness_White: 1
+    - _Shading_Multiplier: 2.61
+    - _Softness: -0.07
     - _Solid_Color_Overlay: 0
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -133,6 +144,7 @@ Material:
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
+    - _USE_SCREEN_SPACE: 0
     - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
@@ -142,7 +154,7 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Rim_Light_Color: {r: 0.5849056, g: 0.26425773, b: 0.046350967, a: 0}
-    - _ShadowColor: {r: 0.8763814, g: 0, b: 1, a: 0}
+    - _ShadowColor: {r: 0.15201464, g: 0.027910262, b: 0.46226418, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _TilingToonEffect: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
