@@ -46,9 +46,37 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _Base_Color_Texture:
+        m_Texture: {fileID: 2800000, guid: d8774c359eb6e604caa7b75a0c9bf650, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 23d6fd4334af0ee43bfe02c3edf1b8fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORM_Texture:
+        m_Texture: {fileID: 2800000, guid: 3d9a11e1d33bb894c920effcecadfcd6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_486e51dd64fc4128b6de44b08b5b3fd8_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 5a7531918025f7244b2329eab76d33bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Base_Roughness: 0.84
     - _EnableBlendModePreserveSpecularLighting: 0
-    m_Colors: []
+    - _Has_Metal: 0
+    - _Hue: 1
+    - _Metalness: 0
+    - _RimPower: 3.65
+    - _Rim_Light_Length: 0.135
+    - _Roughness_Blend: 1
+    - _Roughness_Texture_Contrast: 1
+    - _Solid_Color_Overlay: 0
+    m_Colors:
+    - _Rim_Light_Color: {r: 0.69802636, g: 0.8666667, b: 0.37254906, a: 0}
+    - _ShadowColor: {r: 0.5660378, g: 0, b: 0.44416198, a: 0}
+    - _Solid_Color: {r: 0.047418986, g: 0.27980456, b: 0.6792453, a: 0}
   m_BuildTextureStacks: []

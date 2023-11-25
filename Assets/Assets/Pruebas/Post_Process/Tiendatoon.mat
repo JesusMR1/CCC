@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-15085841893000697
+--- !u!114 &-5679919250140777727
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ToonLit
+  m_Name: Tiendatoon
   m_Shader: {fileID: -6465566751694194690, guid: 99197c6b63c14ed4b8e8c5c05095bf3d,
     type: 3}
   m_Parent: {fileID: 0}
@@ -47,15 +47,19 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_486e51dd64fc4128b6de44b08b5b3fd8_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 5a7531918025f7244b2329eab76d33bb, type: 3}
+    - _Base_Color_Texture:
+        m_Texture: {fileID: 2800000, guid: afd216c618accda41b79fd8ecbe9e7f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2D:
-        m_Texture: {fileID: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: d8d5da570eb996d489691f497c9e89ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_44f9bf6ad5b6458393ebe6805a0150fd_Out_0_Texture2D:
+    - _ORM_Texture:
+        m_Texture: {fileID: 2800000, guid: 60dd7c7e51c0dcf40b65a35ba3c1a3a8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowandLightTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -77,7 +81,9 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
+    - _Base_Roughness: 0.15
     - _BlendMode: 0
+    - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -88,6 +94,10 @@ Material:
     - _DstBlend: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
+    - _Has_Metal: 0
+    - _Hue: 0
+    - _Metalness: 0
+    - _NormalIntensity: 1
     - _OpaqueCullMode: 2
     - _RayTracing: 0
     - _ReceivesSSR: 1
@@ -95,6 +105,14 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _RimLight_Brigthness: 2
+    - _RimPower: 5
+    - _Rim_Light_Length: 0.1
+    - _Roughness_Black: 0
+    - _Roughness_Blend: 1
+    - _Roughness_Texture_Contrast: 1
+    - _Roughness_White: 1
+    - _Solid_Color_Overlay: 0
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -108,8 +126,6 @@ Material:
     - _StencilWriteMaskMV: 41
     - _SupportDecals: 1
     - _SurfaceType: 0
-    - _ToonRampOffset: 0
-    - _ToonRampSmoothness: 0
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
@@ -125,6 +141,8 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ToonRampTinting: {r: 0.3962264, g: 0.02392308, b: 0.02392308, a: 0}
-    - _WorldPosition: {r: 0, g: 0, b: 0, a: 0}
+    - _Rim_Light_Color: {r: 0.5849056, g: 0.26425773, b: 0.046350967, a: 0}
+    - _ShadowColor: {r: 0.8763814, g: 0, b: 1, a: 0}
+    - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _TilingToonEffect: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
