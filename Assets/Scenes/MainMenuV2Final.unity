@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: f21233dc05311c74fb1b102b5ffd779d,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 373fdbcb947ef0d41ba33288faa5b2f3,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: d3a0e16455f99ad46a7600054a52687e,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -3174,7 +3174,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3389,7 +3389,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4777,7 +4777,7 @@ MonoBehaviour:
   m_EvsmBlurPasses: 0
   m_LightlayersMask: 1
   m_LinkShadowLayers: 1
-  m_ShadowNearPlane: 0.1
+  m_ShadowNearPlane: 0
   m_BlockerSampleCount: 24
   m_FilterSampleCount: 16
   m_MinFilterSize: 0.1
@@ -4848,12 +4848,12 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.7568628, g: 0.2784314, b: 0.5019608, a: 1}
   m_Intensity: 0.13757715
-  m_Range: 11.42
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
