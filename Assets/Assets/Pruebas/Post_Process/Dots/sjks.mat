@@ -30,6 +30,7 @@ Material:
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _USE_SCREEN_SPACE
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -78,7 +79,7 @@ Material:
     - _Shading_Multiplier: 15.78
     - _Softness: 0.4
     - _Solid_Color_Overlay: 0
-    - _USE_SCREEN_SPACE: 0
+    - _USE_SCREEN_SPACE: 1
     m_Colors:
     - _Rim_Light_Color: {r: 0.69802636, g: 0.8666667, b: 0.37254906, a: 0}
     - _ShadowColor: {r: 0.0195799, g: 0.0897037, b: 0.4716981, a: 0}
