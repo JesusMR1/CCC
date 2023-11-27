@@ -40,7 +40,7 @@ public class Clientes : MonoBehaviour
 
     IEnumerator SiguienteCliente()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         anim.SetTrigger("Arriba");
 
         DisableCurrentObject();
