@@ -19,12 +19,6 @@ public class DialogoJefe : MonoBehaviour
 
     private bool dialogoActivo;
     private int dialogoIndex;
-
-    private void Start()
-    {
-        
-    }
-
     private void Update()
     {
         Deact();
