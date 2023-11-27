@@ -173,30 +173,30 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.09
+    m_Value: 0.1
   scatter:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.31
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.22075468, b: 0.8350264, a: 1}
+    m_Value: {r: 0.4132657, g: 0.16208613, b: 0.5471698, a: 1}
   dirtTexture:
     m_OverrideState: 1
     m_Value: {fileID: 2800000, guid: a345f85c561875d49bd82b7af88154e7, type: 3}
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 36.1
+    m_Value: 35.8
   anamorphic:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   m_Resolution:
     m_OverrideState: 1
     m_Value: 4
   m_HighQualityPrefiltering:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   m_HighQualityFiltering:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
@@ -213,7 +213,6 @@ MonoBehaviour:
   components:
   - {fileID: -5944244408142674624}
   - {fileID: -5119465583878023382}
-  - {fileID: 6133102377770974784}
   - {fileID: -2307312758600935199}
   - {fileID: 7308562121045490561}
 --- !u!114 &6133102377770974784
@@ -280,7 +279,7 @@ MonoBehaviour:
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.76
+    m_Value: 1
   m_MaxSamples:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
