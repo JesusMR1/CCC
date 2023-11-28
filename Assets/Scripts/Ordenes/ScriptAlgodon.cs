@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ScriptAlgodon : MonoBehaviour
 {
 
     public Material algodonMat;
@@ -12,9 +12,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
     }
-    public void CambiarTextura()
+    public void CambiarTextura(Texture2D nuevaTextura)
     {
-        algodonMat.SetTexture("_Base_Color_Texture", texturaAlgodon);
+        algodonMat = GetComponent<Material>();
+        algodonMat.SetTexture("_Base_Color_Texture", nuevaTextura);
+        texturaAlgodon = nuevaTextura;
     }
 
 }
