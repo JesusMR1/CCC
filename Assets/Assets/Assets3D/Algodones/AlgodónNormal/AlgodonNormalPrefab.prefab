@@ -96,5 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14710d686b784554e830a889d749b8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  algodonMat: {fileID: 0}
+  algodonMat: {fileID: 2100000, guid: 291780fa0973bb5488cb1f75e67d8eeb, type: 2}
   texturaAlgodon: {fileID: 0}
