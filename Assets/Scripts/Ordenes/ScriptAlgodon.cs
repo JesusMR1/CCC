@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ScriptAlgodon : MonoBehaviour
@@ -7,6 +8,7 @@ public class ScriptAlgodon : MonoBehaviour
 
     public Material algodonMat;
     public Texture2D texturaAlgodon;
+    public GameObject Forma;
 
     private void Start()
     {
@@ -19,4 +21,9 @@ public class ScriptAlgodon : MonoBehaviour
         texturaAlgodon = nuevaTextura;
     }
 
+    public void CambiarForma(GameObject nuevaForma)
+    {
+        Forma = GetComponent<GameObject>();
+        Forma = nuevaForma;
+    }
 }
