@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[System.Serializable]
-public struct EstructuraAlgodon
-{
-    public Texture2D colorAlgodon;
-}
+
 public class AlgodonControler : MonoBehaviour
 {
+
+    public Transform[] posicion = new Transform[1];
     public ScriptAlgodon algodonPrefab;
 
     public EstructuraAlgodon[] structArray = new EstructuraAlgodon[3];
@@ -17,17 +15,21 @@ public class AlgodonControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScriptAlgodon newAlgodon = Instantiate(algodonPrefab);
+        for (int x = 0; x < posicion.Length; x++)
+        {
+            ScriptAlgodon newAlgodon = Instantiate(algodonPrefab, posicion[x]);
+
+                newAlgodon.texturaAlgodon = structArray[0].colorAlgodon;
+            
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        ScriptAlgodon newAlgodon = algodonPrefab;
-        if (Input.GetMouseButtonDown(0) && tag == "ColorAzul")
-        {
-            newAlgodon.texturaAlgodon = structArray[0].colorAlgodon;
-        }
+        
+
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - ColorAzul
   - ColorRosa
   - ColorMorado
+  - Nota
   layers:
   - Default
   - TransparentFX
