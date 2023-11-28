@@ -6,14 +6,18 @@ using UnityEngine;
 public struct EstructuraAlgodon
 {
     public Texture2D colorAlgodon;
-    public GameObject formaAlgodon;
+    public Mesh formaAlgodon;
 }
 public class AlgodonesEZ : MonoBehaviour
 {
     public ScriptAlgodon algodonPrefab;
 
+    ScriptAlgodon newAlgodon;
+
     public Transform[] posicion = new Transform[1];
-    public EstructuraAlgodon[] structArray = new EstructuraAlgodon[3];
+   // public EstructuraAlgodon[] structArray = new EstructuraAlgodon[4];
+
+    public int selectedForma;
 
     private void Start()
     {
@@ -57,43 +61,59 @@ public class AlgodonesEZ : MonoBehaviour
         }
     }
 
-    void CambiarTexturaAzul()
+    public void CambiarTexturaAzul()
     {
         Debug.Log("Ahora es Azul");
 
-        algodonPrefab.texturaAlgodon = structArray[0].colorAlgodon;
+        /*algodonPrefab.texturaAlgodon = structArray[0].colorAlgodon;
         algodonPrefab.algodonMat.SetTexture("_Base_Color_Texture", algodonPrefab.texturaAlgodon);
-        algodonPrefab.Forma = structArray[0].formaAlgodon;
+        // algodonPrefab.Forma = structArray[0].formaAlgodon;*/
 
+        newAlgodon.CambiarTextura(selectedForma, 0);
         
+
     }
-    void CambiarTexturaRosa()
+    public void CambiarTexturaRosa()
     {
         Debug.Log("Ahora es Rosa");
 
-        algodonPrefab.texturaAlgodon = structArray[1].colorAlgodon;
+        /*algodonPrefab.texturaAlgodon = structArray[1].colorAlgodon;
         algodonPrefab.algodonMat.SetTexture("_Base_Color_Texture", algodonPrefab.texturaAlgodon);
-        algodonPrefab.Forma = structArray[1].formaAlgodon;
+        algodonPrefab.Forma = structArray[1].formaAlgodon;*/
+
+        newAlgodon.CambiarTextura(selectedForma, 2);
 
     }
-    void CambiarTexturaMorada()
+    public void CambiarTexturaMorada()
     {
         Debug.Log("Ahora es Morada");
 
 
-        algodonPrefab.texturaAlgodon = structArray[2].colorAlgodon;
+        /*algodonPrefab.texturaAlgodon = structArray[2].colorAlgodon;
         algodonPrefab.algodonMat.SetTexture("_Base_Color_Texture", algodonPrefab.texturaAlgodon);
-        algodonPrefab.Forma = structArray[2].formaAlgodon;
+        //algodonPrefab.Forma = structArray[2].formaAlgodon;*/
+
+        newAlgodon.CambiarTextura(selectedForma, 1);
     }
 
-    void GenerarAlgodon()
+    public void GenerarAlgodon()
     {
         for (int x = 0; x < posicion.Length; x++)
         {
-            ScriptAlgodon newAlgodon = Instantiate(algodonPrefab, posicion[x]);
+            newAlgodon = Instantiate(algodonPrefab, posicion[x]);
             newAlgodon.algodonMat.SetTexture("_Base_Color_Texture", newAlgodon.texturaAlgodon);
-            newAlgodon.Forma.GetComponent<GameObject>();
-  
+            //newAlgodon.Forma.GetComponent<GameObject>();
+          
+            newAlgodon.CambiarForma(selectedForma);
+
+
         }
     }
+
+    public void SetForma(int nuevaForma)
+    {
+        selectedForma = nuevaForma;
+    }
+
+
 }
