@@ -1884,7 +1884,7 @@ MonoBehaviour:
   reachableNodes:
   - {fileID: 58381278}
   - {fileID: 288008987}
-  - {fileID: 784280236}
+  - {fileID: 0}
   col: {fileID: 0}
 --- !u!65 &301860804
 BoxCollider:
@@ -2981,7 +2981,6 @@ GameObject:
   - component: {fileID: 696719834}
   - component: {fileID: 696719833}
   - component: {fileID: 696719832}
-  - component: {fileID: 696719835}
   m_Layer: 0
   m_Name: Modelo_TarroVerde
   m_TagString: Untagged
@@ -3075,20 +3074,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696719830}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &696719835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696719830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 013f42887c87293449a1962a5307848b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  percentageText: {fileID: 0}
-  increaseSpeed: 50
 --- !u!1 &697475807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,9 +3501,6 @@ GameObject:
   - component: {fileID: 784280234}
   - component: {fileID: 784280233}
   - component: {fileID: 784280232}
-  - component: {fileID: 784280236}
-  - component: {fileID: 784280235}
-  - component: {fileID: 784280237}
   m_Layer: 0
   m_Name: Modelo_TarroRojo
   m_TagString: Untagged
@@ -3612,50 +3594,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784280230}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &784280235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784280230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f935d0b1ac4e774ea7453495d0fab97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myItem:
-    itemName: pista 1
---- !u!114 &784280236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784280230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b32b13abbef80df41af0c7d260c7d501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camaraPosition: {fileID: 1929897712}
-  reachableNodes: []
-  col: {fileID: 0}
-  loc: {fileID: 301860803}
---- !u!114 &784280237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784280230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 013f42887c87293449a1962a5307848b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  percentageText: {fileID: 0}
-  increaseSpeed: 50
 --- !u!1 &790134258
 GameObject:
   m_ObjectHideFlags: 0
