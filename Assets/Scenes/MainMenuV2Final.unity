@@ -5579,6 +5579,7 @@ GameObject:
   - component: {fileID: 1776274798}
   - component: {fileID: 1776274797}
   - component: {fileID: 1776274796}
+  - component: {fileID: 1776274799}
   m_Layer: 0
   m_Name: BotonJugar
   m_TagString: Untagged
@@ -5650,9 +5651,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1715653872}
-        m_TargetAssemblyTypeName: ScriptBotonesMainMenu, Assembly-CSharp
-        m_MethodName: Cinematica
+      - m_Target: {fileID: 1776274799}
+        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5700,6 +5701,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776274794}
   m_CullTransparentMesh: 1
+--- !u!114 &1776274799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776274794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98753276eb491fb43a671c9be72ee9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: "D\xEDa4Bueno"
 --- !u!1 &1831533337
 GameObject:
   m_ObjectHideFlags: 0

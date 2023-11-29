@@ -1,5 +1,8 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class ArrowCounter : MonoBehaviour
 {
@@ -9,6 +12,11 @@ public class ArrowCounter : MonoBehaviour
     private int maxCounter = 10;
     public float baseSpeed = 2.0f; // Initialize with the desired value
     public float speedIncreaseFactor = 0.5f; // Adjust as needed
+
+    public AudioClip freezeSound;
+    public float freezeDuration = 6f; // Duration to freeze the screen in seconds
+    private float timeCounter = 0f;
+    private bool isFrozen = false;
 
 
 
@@ -27,6 +35,24 @@ public class ArrowCounter : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        // Check if the counter has reached 10 before adjusting the speed
+        if (arrowYesCounter >= maxCounter)
+        {
+            if (!isFrozen)
+            {
+                Debug.Log("Counter reached 10. Freezing screen for 6 seconds.");
+                StartCoroutine(FreezeScreen());
+            }
+        }
+        else
+        {
+            // Continue normal update logic here
+        }
+    }
+
+
     public void IncreaseArrowYesCounter()
     {
         arrowYesCounter++;
@@ -40,8 +66,11 @@ public class ArrowCounter : MonoBehaviour
         // Check if the counter has reached 10 before adjusting the speed
         if (arrowYesCounter >= maxCounter)
         {
-            Debug.Log("Counter reached 10. Do something here.");
-            // Optionally, you can stop the movement or perform other actions
+            if (!isFrozen)
+            {
+                Debug.Log("Counter reached 10. Freezing screen for 3 seconds.");
+                StartCoroutine(FreezeScreen());
+            }
         }
         else
         {
@@ -67,5 +96,33 @@ public class ArrowCounter : MonoBehaviour
         counterText.text = arrowYesCounter + " / " + maxCounter;
     }
 
-    // Rest of the script...
+
+    IEnumerator FreezeScreen()
+    {
+        isFrozen = true;
+        Time.timeScale = 0f; // Set time scale to 0 to freeze the screen
+
+        // Play the freeze sound (assuming you have an AudioSource component attached to the same GameObject)
+        if (GetComponent<AudioSource>() != null && freezeSound != null)
+        {
+            GetComponent<AudioSource>().PlayOneShot(freezeSound);
+        }
+
+        // Wait for the specified duration (6 seconds in this case)
+        yield return new WaitForSecondsRealtime(freezeDuration);
+
+        // Unfreeze the screen
+        Time.timeScale = 1f;
+        isFrozen = false;
+
+        // Transition to the specified scene
+        TransitionToScene("MainMenuV2Final");
+    }
+
+    void TransitionToScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
+
+
