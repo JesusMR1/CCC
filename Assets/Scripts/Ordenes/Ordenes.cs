@@ -44,6 +44,9 @@ public class Ordenes : MonoBehaviour
 
             // Set the parent to the Canvas to make it a child of the Canvas
             instantiatedUIElement.transform.SetParent(spawnPoint, false);
+            RectTransform rectTransform = instantiatedUIElement.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = Vector2.zero;
+            
         }
 
         Debug.Log("Selected GameObjects: " + string.Join(", ", OrdenesSeleccionadas.Select(go => go.name)));
