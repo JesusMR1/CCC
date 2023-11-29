@@ -31,11 +31,11 @@ public class ScriptAlgodon : MonoBehaviour
         {
             case 0:
                 algodonMat = FormaActual.GetComponent<MeshRenderer>().material;
-                algodonMat.SetTexture("_Base_Color_Texture", TexturasConejo[Color]);
+                algodonMat.SetTexture("_Base_Color_Texture", TexturasNormal[Color]);
                 break;
             case 1:
                 algodonMat = FormaActual.GetComponent<MeshRenderer>().material;
-                algodonMat.SetTexture("_Base_Color_Texture", TexturasConejo[Color]);
+                algodonMat.SetTexture("_Base_Color_Texture", TexturasPayaso[Color]);
                 break;
             case 2:
                 algodonMat = FormaActual.GetComponent<MeshRenderer>().material;
