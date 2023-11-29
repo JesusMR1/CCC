@@ -35,24 +35,6 @@ public class ArrowCounter : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // Check if the counter has reached 10 before adjusting the speed
-        if (arrowYesCounter >= maxCounter)
-        {
-            if (!isFrozen)
-            {
-                Debug.Log("Counter reached 10. Freezing screen for 6 seconds.");
-                StartCoroutine(FreezeScreen());
-            }
-        }
-        else
-        {
-            // Continue normal update logic here
-        }
-    }
-
-
     public void IncreaseArrowYesCounter()
     {
         arrowYesCounter++;
