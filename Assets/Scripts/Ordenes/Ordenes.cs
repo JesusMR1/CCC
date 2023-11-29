@@ -11,38 +11,42 @@ public class Ordenes : MonoBehaviour
     // Selected GameObjects will be stored here
     public GameObject[] OrdenesSeleccionadas;
 
+    public RectTransform[] spawnPoints;
+
     void Start()
     {
     }
 
     void Update()
     {
-        // Check for a button press (you can change "Fire1" to your desired button)
+        
         if (Input.GetButtonDown("Fire1"))
         {
-            // Call the function to shuffle and select random GameObjects
-            StartCoroutine(ShuffleAndSelectGameObjects(5));
+            SelectRandomGameObjects(5);
         }
     }
 
-    IEnumerator ShuffleAndSelectGameObjects(int count)
+    void SelectRandomGameObjects(int count)
     {
-        // Shuffle the array
+        // Shuffle the array of game objects
         ShuffleArray(TotalCombinaciones);
 
-        // Randomly select 5 GameObjects
-        OrdenesSeleccionadas = new GameObject[count];
-        System.Random rand = new System.Random();
+        // Select a subset of the shuffled game objects
+        OrdenesSeleccionadas = TotalCombinaciones.Take(count).ToArray();
 
         for (int i = 0; i < count; i++)
         {
-            OrdenesSeleccionadas[i] = TotalCombinaciones[i];
+            // Use the i-th spawn point
+            RectTransform spawnPoint = spawnPoints[i % spawnPoints.Length];
+
+            // Instantiate the selected UI element at the spawn point
+            GameObject instantiatedUIElement = Instantiate(OrdenesSeleccionadas[i], spawnPoint.position, Quaternion.identity);
+
+            // Set the parent to the Canvas to make it a child of the Canvas
+            instantiatedUIElement.transform.SetParent(spawnPoint, false);
         }
 
-        // Print the selected GameObjects (names)
         Debug.Log("Selected GameObjects: " + string.Join(", ", OrdenesSeleccionadas.Select(go => go.name)));
-
-        yield return null;
     }
 
     void ShuffleArray<T>(T[] array)
