@@ -13,13 +13,13 @@ public class Botn3D : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        switch(Color)
+        switch (Color)
         {
             //0 azul, 1 morado, 2 rosa
             case 0:
                 refAlgodones.CambiarTexturaAzul();
                 break;
-           
+
             case 1:
                 refAlgodones.CambiarTexturaMorada();
                 break;
