@@ -381,7 +381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &17254596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,6 +937,8 @@ MonoBehaviour:
   counterText: {fileID: 1246633258}
   baseSpeed: 253
   speedIncreaseFactor: 100
+  freezeSound: {fileID: 0}
+  freezeDuration: 6
 --- !u!114 &79720299
 MonoBehaviour:
   m_ObjectHideFlags: 0
