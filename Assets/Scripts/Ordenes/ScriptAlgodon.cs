@@ -15,8 +15,10 @@ public class ScriptAlgodon : MonoBehaviour
 
 
     [SerializeField] private GameObject[] Children;
+    [SerializeField] private Texture2D[] TexturasNormal; 
     [SerializeField] private Texture2D[] TexturasGato; 
     [SerializeField] private Texture2D[] TexturasConejo; 
+    [SerializeField] private Texture2D[] TexturasPayaso; 
     
 
     private void Start()
@@ -27,6 +29,14 @@ public class ScriptAlgodon : MonoBehaviour
     {
         switch (Forma)
         {
+            case 0:
+                algodonMat = FormaActual.GetComponent<MeshRenderer>().material;
+                algodonMat.SetTexture("_Base_Color_Texture", TexturasConejo[Color]);
+                break;
+            case 1:
+                algodonMat = FormaActual.GetComponent<MeshRenderer>().material;
+                algodonMat.SetTexture("_Base_Color_Texture", TexturasConejo[Color]);
+                break;
             case 2:
                 algodonMat = FormaActual.GetComponent<MeshRenderer>().material;
                 algodonMat.SetTexture("_Base_Color_Texture", TexturasConejo[Color]);

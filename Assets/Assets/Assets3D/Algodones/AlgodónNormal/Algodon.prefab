@@ -50,13 +50,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   algodonMat: {fileID: 2100000, guid: 291780fa0973bb5488cb1f75e67d8eeb, type: 2}
   texturaAlgodon: {fileID: 0}
-  Forma: {fileID: 0}
+  FormaActual: {fileID: 0}
   nombreForma: 0
   Children:
   - {fileID: 7878053320699331811}
   - {fileID: 8498439699721998107}
   - {fileID: 8530229411963558523}
   - {fileID: 2181780933831644171}
+  TexturasNormal:
+  - {fileID: 2800000, guid: 81462282540a62e4abf15bc5cc87ef0f, type: 3}
+  - {fileID: 2800000, guid: ebd9518c44d7dcd458c29aa73d366233, type: 3}
+  - {fileID: 2800000, guid: a0d36165293f3884683bc6b13a5d0a00, type: 3}
   TexturasGato:
   - {fileID: 2800000, guid: 2041b3b5d08edec448f2cedba2e1867a, type: 3}
   - {fileID: 2800000, guid: 93b01780e4c13614aa421eba3b50fc6f, type: 3}
@@ -65,6 +69,10 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 8aec3eec2354533499d3c4d072b11951, type: 3}
   - {fileID: 2800000, guid: 1d1fdf4941cf4cf45884901e2489122e, type: 3}
   - {fileID: 2800000, guid: 5c8dcd6ba771f8541a80c9c0c190e580, type: 3}
+  TexturasPayaso:
+  - {fileID: 2800000, guid: e3718525ec8bbc348ad45dbd5a130c87, type: 3}
+  - {fileID: 2800000, guid: a56b99e5da7a98f4ca8f7ad5b7baa867, type: 3}
+  - {fileID: 2800000, guid: 80fa874a0af85ca468a53e6cf85e976e, type: 3}
 --- !u!1001 &1334850971071441242
 PrefabInstance:
   m_ObjectHideFlags: 0

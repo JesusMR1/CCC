@@ -25,37 +25,12 @@ public class AlgodonesEZ : MonoBehaviour
     }
     private void Update()
     {
-        /*if (Input.GetMouseButtonDown(0)&& ColorAzul.tag == "ColorAzul")
-        {
-            Debug.Log("Ahora es Azul");
-
-            for (int x = 0; x < posicion.Length; x++)
-            {
-                ScriptAlgodon newAlgodon = Instantiate(algodonPrefab, posicion[x]);
-
-                newAlgodon.texturaAlgodon = structArray[0].colorAlgodon;
-                newAlgodon.algodonMat.SetTexture("_Base_Color_Texture", newAlgodon.texturaAlgodon);
-            }
-        }*/
 
     }
 
     private void OnMouseDown()
     {
-        if (tag == "ColorAzul" )
-        {
-            CambiarTexturaAzul();
-        }
-        else if (tag == "ColorRosa")
-        {
-            CambiarTexturaRosa();
-        }
-
-        else if(tag == "ColorMorado")
-        {
-            CambiarTexturaMorada();
-        }
-        else if (tag == "Nota")
+        if (tag == "Nota")
         {
             GenerarAlgodon();
         }
