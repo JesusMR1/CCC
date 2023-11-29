@@ -8,6 +8,8 @@ TagManager:
   - ColorRosa
   - ColorMorado
   - Nota
+  - ArrowYes
+  - NuhUh
   layers:
   - Default
   - TransparentFX
