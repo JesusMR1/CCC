@@ -896,6 +896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697413819}
   - component: {fileID: 697413820}
+  - component: {fileID: 697413821}
   m_Layer: 0
   m_Name: AlgodonesController
   m_TagString: Untagged
@@ -935,6 +936,32 @@ MonoBehaviour:
   posicion:
   - {fileID: 921847013}
   selectedForma: 0
+--- !u!114 &697413821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697413817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ae01987e314d94590ce59220cf4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalCombinaciones:
+  - {fileID: 6060603023164875810, guid: a9cacd04cfbb4f5408c1b9e8846fa8e3, type: 3}
+  - {fileID: 6060603023164875810, guid: ee4f95251321b7142a69570bfc9a7ebe, type: 3}
+  - {fileID: 6060603023164875810, guid: ec74b1f4e47c7814ab8f3185bbb49ae5, type: 3}
+  - {fileID: 6060603023164875810, guid: 395be86db3e2f33438bcdcbc232e5a2e, type: 3}
+  - {fileID: 6060603023164875810, guid: c098e10172e93f44d9b80293bea97abf, type: 3}
+  - {fileID: 6060603023164875810, guid: d3690ebc990cc4542b26350bf57c1070, type: 3}
+  - {fileID: 6060603023164875810, guid: 405938c8c0c5f0c4f917cc2d25ebab27, type: 3}
+  - {fileID: 6060603023164875810, guid: c8606d14b58782c45bdb5e94fb5489e9, type: 3}
+  - {fileID: 6060603023164875810, guid: 5028e149dd0c2c841be8acc486af44be, type: 3}
+  - {fileID: 6060603023164875810, guid: 2e1666b16698dc54eac744ca4f3a520c, type: 3}
+  - {fileID: 6060603023164875810, guid: 9b8afe26a6928ca4995774f80d9384e1, type: 3}
+  - {fileID: 6060603023164875810, guid: dda25c2cf7135704bb4556609e997093, type: 3}
+  OrdenesSeleccionadas: []
 --- !u!1 &786370054
 GameObject:
   m_ObjectHideFlags: 0
