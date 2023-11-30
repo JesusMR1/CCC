@@ -51,7 +51,7 @@ public class ArrowKeyGenerator : MonoBehaviour
     {
         float spacing = 0; // Initialize the spacing value.
 
-        ShuffleArray(arrowKeyPrefabs);
+       ShuffleArray(arrowKeyPrefabs);
 
         foreach (GameObject arrowKeyPrefab in arrowKeyPrefabs)
         {
@@ -67,47 +67,7 @@ public class ArrowKeyGenerator : MonoBehaviour
         canSpawn = false; // Prevent further spawning until the current set of arrow keys is cleared.
     }
 
-    public void HandleArrowKeyInput(KeyCode inputKeyCode, GameObject caller)
-    {
-      
-        if (spawnedArrowKeys.Count > 0)
-        {
-          
-            ArrowKey arrowKey = spawnedArrowKeys[0];
-            if (arrowKey.assignedKeyCode == inputKeyCode && caller == arrowKey.gameObject)
-            {
-                if (spawnedArrowKeys.Count > 1)
-                {
-                    spawnedArrowKeys.RemoveAt(0);
-                    //  spawnedArrowKeys[0].canGetInput = true;
 
-                }
-                else
-                {
-                    spawnedArrowKeys.Clear();
-           
-                    canSpawn = true;
-                    misinputs = 0; // Reset the misinput count when the combination is correct.
-                    Debug.Log("Yay"); // Display "Yay" for a correct combination.
-
-                    
-           
-                }
-            }
-            /*   if (arrowKey.assignedKeyCode == inputKeyCode && caller == arrowKey.gameObject)
-               {
-                   Destroy(arrowKey.gameObject);
-
-                   StartCoroutine(delayInput());
-               }
-               else
-               {
-                   // If the input is incorrect, you can increase the misinput count.
-                 StartCoroutine(delayinputMiss());
-               }
-               */
-        }
-    }
 
     public void HandleArrowKeyInput2()  // NUEVA FUNCION, SE USA EN LUGAR DE HANDLEARROWKEYINPUT Y SE LLAMA EN EL UPDATE
     {

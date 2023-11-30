@@ -24,6 +24,7 @@ TagManager:
   - PayasoAzul
   - PayasoRosa
   - PayasoMorado
+  - Cliente
   layers:
   - Default
   - TransparentFX

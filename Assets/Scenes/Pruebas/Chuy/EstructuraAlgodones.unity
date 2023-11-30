@@ -503,6 +503,10 @@ MonoBehaviour:
   - {fileID: 372249856}
   - {fileID: 1026672805}
   - {fileID: 1141493737}
+  - {fileID: 1394590584}
+  - {fileID: 372249856}
+  - {fileID: 1026672805}
+  - {fileID: 1141493737}
   arrowKeySelected: []
   arrowKeySpawnPoint: {fileID: 1780786973}
   horizontalSpacing: 0.5
@@ -3798,6 +3802,10 @@ MonoBehaviour:
   - {fileID: 372249856}
   - {fileID: 1026672805}
   - {fileID: 1141493737}
+  - {fileID: 3130671167569345039, guid: 26fc905843ee7554aba8be30aeac2bc0, type: 3}
+  - {fileID: 6126911030684026355, guid: 482ec7c897ffa384088f046ecc49a8d4, type: 3}
+  - {fileID: 3583665379356810714, guid: f18a05aff641b6d478614180a39d1e40, type: 3}
+  - {fileID: 5910351523620607128, guid: 472e70cad758e484a8e52c51b63f9042, type: 3}
   arrowKeySelected: []
   arrowKeySpawnPoint: {fileID: 0}
   horizontalSpacing: 0.5
