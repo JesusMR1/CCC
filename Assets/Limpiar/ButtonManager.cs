@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class ButtonManager : MonoBehaviour
 {
+
+
     public Button[] buttons;          // Array to hold all buttons
     public GameObject firstObject;    // The first 3D object
     public GameObject secondObject;   // The second 3D object
@@ -81,6 +84,9 @@ public class ButtonManager : MonoBehaviour
         // Reset the state when a new scene is loaded
         ResetState();
     }
+
+
+
 
     void ResetState()
     {
