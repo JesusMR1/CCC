@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CounterSceneTransition : MonoBehaviour
+public class CounterSceneTransition1 : MonoBehaviour
 {
-    // Specify the name of the scene you want to load for counter range 1-3
+    // Specify the name of the scene you want to load for counter range 1-
     public string sceneToLoad4to5;
 
     public string sceneToLoad0to3;
 
 
 
-    // Function to be called when the button is clicked
     public void CheckCounterAndLoadScene()
     {
         // Access the PistaSave singleton instance
-        PistaSave pistaSave = PistaSave.Instance;
+        PistaSave1 pistaSave = PistaSave1.Instance;
 
         // Check if the counter is between 1 and 3 (inclusive)
         if (pistaSave.Counter >= 4 && pistaSave.Counter <= 5)

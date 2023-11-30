@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PistaSave : MonoBehaviour
+public class PistaSave1 : MonoBehaviour
 {
-    private static PistaSave _instance;
+    private static PistaSave1 _instance;
 
-    public static PistaSave Instance
+    public static PistaSave1 Instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType<PistaSave>();
+                _instance = FindObjectOfType<PistaSave1>();
 
                 if (_instance == null)
                 {
-                    GameObject singleton = new GameObject(typeof(PistaSave).Name);
-                    _instance = singleton.AddComponent<PistaSave>();
+                    GameObject singleton = new GameObject(typeof(PistaSave1).Name);
+                    _instance = singleton.AddComponent<PistaSave1>();
                 }
             }
 
