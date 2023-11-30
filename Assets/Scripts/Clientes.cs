@@ -26,7 +26,7 @@ public class Clientes : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Contador.contadorOrdenes < 5) 
+        if (Contador.contadorOrdenes < 1) 
         {
             Contador.contadorOrdenes++;
             anim.SetTrigger("Abajo");
