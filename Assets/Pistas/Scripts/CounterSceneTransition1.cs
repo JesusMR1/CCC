@@ -5,15 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class CounterSceneTransition1 : MonoBehaviour
 {
+    [SerializeField] Animator transitionAnim;
+
     // Specify the name of the scene you want to load for counter range 1-
     public string sceneToLoad4to5;
 
     public string sceneToLoad0to3;
 
 
+    public void LoadScene()
+    {
+        StartCoroutine(AnimEnding());
+    }
 
     public void CheckCounterAndLoadScene()
     {
+        StartCoroutine(AnimEnding());
+
+    }
+
+    IEnumerator AnimEnding()
+    {
+        transitionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(1);
+
         // Access the PistaSave singleton instance
         PistaSave1 pistaSave = PistaSave1.Instance;
 
@@ -29,5 +44,7 @@ public class CounterSceneTransition1 : MonoBehaviour
             // Load the specified scene for counter range 4-6
             SceneManager.LoadScene(sceneToLoad0to3);
         }
+
+        transitionAnim.SetTrigger("Start");
     }
 }

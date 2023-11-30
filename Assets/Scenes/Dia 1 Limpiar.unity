@@ -7045,9 +7045,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 790134260}
-  botonLimpiar: {fileID: 2026825047}
-  botonInicioDia: {fileID: 1382892961}
-  botonFinDia: {fileID: 245425000}
+  botonLimpiar: {fileID: 1769478425}
+  botonInicioDia: {fileID: 957359475}
+  botonFinDia: {fileID: 957359475}
   timer: {fileID: 1172296668}
   advanceTime: {fileID: 1172296670}
 --- !u!1 &1651399550
@@ -7994,7 +7994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1769478426
 RectTransform:
   m_ObjectHideFlags: 0
