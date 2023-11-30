@@ -12,6 +12,7 @@ public class Ordenes : MonoBehaviour
     public GameObject[] OrdenesSeleccionadas;
 
     public RectTransform[] spawnPoints;
+    public List<EstructuraOrden> OrdenesCreadas= new List<EstructuraOrden>();
 
     void Start()
     {
@@ -19,32 +20,29 @@ public class Ordenes : MonoBehaviour
 
     void Update()
     {
-        
-        if (Input.GetButtonDown("Fire1"))
-        {
-            SelectRandomGameObjects(5);
-        }
+
     }
 
-    void SelectRandomGameObjects(int count)
+    public void SelectRandomOrdenes(int count)
     {
         // Shuffle the array of game objects
         ShuffleArray(TotalCombinaciones);
 
         // Select a subset of the shuffled game objects
         OrdenesSeleccionadas = TotalCombinaciones.Take(count).ToArray();
-
+        
         for (int i = 0; i < count; i++)
         {
             // Use the i-th spawn point
             RectTransform spawnPoint = spawnPoints[i % spawnPoints.Length];
 
             // Instantiate the selected UI element at the spawn point
-            GameObject instantiatedUIElement = Instantiate(OrdenesSeleccionadas[i], spawnPoint.position, Quaternion.identity);
+            GameObject instantiatedOrdenes = Instantiate(OrdenesSeleccionadas[i], spawnPoint.position, Quaternion.identity);
 
+            OrdenesCreadas.Add(instantiatedOrdenes.GetComponent<EstructuraOrden>());  // guardar una lista de ordenes creadas
             // Set the parent to the Canvas to make it a child of the Canvas
-            instantiatedUIElement.transform.SetParent(spawnPoint, false);
-            RectTransform rectTransform = instantiatedUIElement.GetComponent<RectTransform>();
+            instantiatedOrdenes.transform.SetParent(spawnPoint, false);
+            RectTransform rectTransform = instantiatedOrdenes.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = Vector2.zero;
             
         }
@@ -67,4 +65,6 @@ public class Ordenes : MonoBehaviour
             array[j] = temp;
         }
     }
+
+
 }

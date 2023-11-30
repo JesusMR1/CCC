@@ -11,6 +11,18 @@ TagManager:
   - ArrowYes
   - NuhUh
   - Refill
+  - NormalAzul
+  - NormalRosa
+  - NormalMorado
+  - ConejoAzul
+  - ConejoRosa
+  - ConejoMorado
+  - GatoAzul
+  - GatoRosa
+  - GatoMorado
+  - PayasoAzul
+  - PayasoRosa
+  - PayasoMorado
   layers:
   - Default
   - TransparentFX
