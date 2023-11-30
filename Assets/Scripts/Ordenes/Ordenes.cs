@@ -12,7 +12,10 @@ public class Ordenes : MonoBehaviour
     public GameObject[] OrdenesSeleccionadas;
 
     public RectTransform[] spawnPoints;
-    public List<EstructuraOrden> OrdenesCreadas= new List<EstructuraOrden>();
+
+    public List<EstructuraOrden> OrdenesCreadas = new List<EstructuraOrden>();
+
+    public int ContadorOrdenes = 0;
 
     void Start()
     {
@@ -25,27 +28,33 @@ public class Ordenes : MonoBehaviour
 
     public void SelectRandomOrdenes(int count)
     {
-        // Shuffle the array of game objects
-        ShuffleArray(TotalCombinaciones);
+        ContadorOrdenes++; 
 
-        // Select a subset of the shuffled game objects
-        OrdenesSeleccionadas = TotalCombinaciones.Take(count).ToArray();
-        
-        for (int i = 0; i < count; i++)
+        if(ContadorOrdenes == 1)
         {
-            // Use the i-th spawn point
-            RectTransform spawnPoint = spawnPoints[i % spawnPoints.Length];
+            // Shuffle the array of game objects
+            ShuffleArray(TotalCombinaciones);
 
-            // Instantiate the selected UI element at the spawn point
-            GameObject instantiatedOrdenes = Instantiate(OrdenesSeleccionadas[i], spawnPoint.position, Quaternion.identity);
+            // Select a subset of the shuffled game objects
+            OrdenesSeleccionadas = TotalCombinaciones.Take(count).ToArray();
 
-            OrdenesCreadas.Add(instantiatedOrdenes.GetComponent<EstructuraOrden>());  // guardar una lista de ordenes creadas
-            // Set the parent to the Canvas to make it a child of the Canvas
-            instantiatedOrdenes.transform.SetParent(spawnPoint, false);
-            RectTransform rectTransform = instantiatedOrdenes.GetComponent<RectTransform>();
-            rectTransform.anchoredPosition = Vector2.zero;
-            
+            for (int i = 0; i < count; i++)
+            {
+                // Use the i-th spawn point
+                RectTransform spawnPoint = spawnPoints[i % spawnPoints.Length];
+
+                // Instantiate the selected UI element at the spawn point
+                GameObject instantiatedOrdenes = Instantiate(OrdenesSeleccionadas[i], spawnPoint.position, Quaternion.identity);
+
+                OrdenesCreadas.Add(instantiatedOrdenes.GetComponent<EstructuraOrden>());  // guardar una lista de ordenes creadas
+                                                                                          // Set the parent to the Canvas to make it a child of the Canvas
+                instantiatedOrdenes.transform.SetParent(spawnPoint, false);
+                RectTransform rectTransform = instantiatedOrdenes.GetComponent<RectTransform>();
+                rectTransform.anchoredPosition = Vector2.zero;
+
+            }
         }
+        
 
         Debug.Log("Selected GameObjects: " + string.Join(", ", OrdenesSeleccionadas.Select(go => go.name)));
     }
