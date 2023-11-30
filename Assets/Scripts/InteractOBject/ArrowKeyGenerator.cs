@@ -17,8 +17,6 @@ public class ArrowKeyGenerator : MonoBehaviour
     private int misinputThreshold = 3; // Set the threshold for misinputs.
 
     private List<ArrowKey> spawnedArrowKeys = new List<ArrowKey>(); // Keep track of spawned arrow keys.
-    private int inputcount = 0;
-    private bool hasMisinput = true;
 
     public AlgodonesEZ refAlgodones;
     private void Start()
@@ -44,7 +42,7 @@ public class ArrowKeyGenerator : MonoBehaviour
     {
         if (canSpawn) // Detect left mouse button click and check if spawning is allowed.
         {
-          //SelectRandomArrows(4);
+          
           GenerateArrowKeys();
         }
     }
@@ -109,14 +107,6 @@ public class ArrowKeyGenerator : MonoBehaviour
                }
                */
         }
-        else
-        {
-            
-        }
-        
-         
-         
-
     }
 
     public void HandleArrowKeyInput2()  // NUEVA FUNCION, SE USA EN LUGAR DE HANDLEARROWKEYINPUT Y SE LLAMA EN EL UPDATE
@@ -162,46 +152,7 @@ public class ArrowKeyGenerator : MonoBehaviour
             
         }
     }
-    
-/*    IEnumerator delayInput()   /// YA NO SE USA
-    {
-      yield return new WaitForSeconds(0.2f);
-        Debug.Log(spawnedArrowKeys.Count);
-        if (spawnedArrowKeys.Count > 1)
-        {
-            spawnedArrowKeys.RemoveAt(0);
-          //  spawnedArrowKeys[0].canGetInput = true;
 
-        }
-        else
-        {
-            spawnedArrowKeys.Clear();
-           
-                canSpawn = true;
-                misinputs = 0; // Reset the misinput count when the combination is correct.
-                Debug.Log("Yay"); // Display "Yay" for a correct combination.
-           
-        }
-           
-
-    }
-    IEnumerator delayinputMiss()
-    {
-        yield return new WaitForSeconds(0.2f);
-        // If the input is incorrect, you can increase the misinput count.
-        misinputs++;
-        Debug.Log("misinputs" + misinputs);
-        if (misinputs >= 3)
-        {
-            // If the player has misinput three times, clear the arrow keys and show "Nay."
-            ClearArrowKeys();
-            Debug.Log("Nay");
-        }
-        else {
-           yield return null;
-        }
-
-    }*/
     public void RegisterArrowKey(ArrowKey arrowKey)
     {
         // Mark arrow keys as inactive initially.
@@ -227,32 +178,6 @@ public class ArrowKeyGenerator : MonoBehaviour
         misinputs = 0; // Reset the misinput count.
     }
 
-    /*void SelectRandomArrows(int count)
-    {
-        float spacing = 0; // Initialize the spacing value.
-
-        // Shuffle the array of game objects
-        ShuffleArray(arrowKeyPrefabs);
-
-        // Select a subset of the shuffled game objects
-        arrowKeySelected = arrowKeyPrefabs.Take(count).ToArray();
-
-        for (int i = 0; i < count; i++)
-        {
-
-            // Use the i-th spawn point
-            Transform spawnPoint = arrowKeySpawnPoint[i % arrowKeySpawnPoint.Length];
-
-            // Instantiate the selected GameObject at the spawn point
-            Instantiate(arrowKeyPrefabs[i], spawnPoint.position + Vector3.right * spacing, Quaternion.identity);
-
-            spacing += horizontalSpacing;
-            arrowKeyObject.SetActive(true);
-            spawnedArrowKeys.Add(arrowKeyObject.GetComponent<ArrowKey>());
-
-            canSpawn = false;
-        }
-    }*/
     void ShuffleArray<T>(T[] array)
     {
         // Fisher-Yates shuffle algorithm

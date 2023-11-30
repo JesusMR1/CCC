@@ -6,13 +6,15 @@ public class ChequeoManager : MonoBehaviour
 {
     [SerializeField] Ordenes refOrdenes;
     [SerializeField] AlgodonesEZ refAlgodones;
+
+    public int contadorAlgodones = 0;
  
    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        contadorAlgodones = 0;
     }
 
     // Update is called once per frame
@@ -36,6 +38,8 @@ public class ChequeoManager : MonoBehaviour
                 refOrdenes.OrdenesCreadas.RemoveAt(0);
 
                 refOrdenes.ContadorOrdenes = 0;
+
+                contadorAlgodones++;
             
             }
             else
