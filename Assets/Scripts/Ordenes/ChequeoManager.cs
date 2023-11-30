@@ -43,7 +43,17 @@ public class ChequeoManager : MonoBehaviour
                 refOrdenes.ContadorOrdenes = 0;
 
                 contadorAlgodones++;
-                textoContador.text = contadorAlgodones + "/10";
+                
+
+                if (contadorAlgodones <= 10) 
+                {
+                    textoContador.text = contadorAlgodones + "/10";
+                }
+                else
+                {
+                    textoContador.text = "OVERTIME";
+                }
+                
 
 
             }
