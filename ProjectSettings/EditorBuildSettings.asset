@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending3.unity
     guid: 8db24d686ca162a449bd41093cf684c2
+  - enabled: 1
+    path: Assets/Scenes/Dia 1 Limpiar.unity
+    guid: 1441cfc941e19fc43a7dee387fccca27
+  - enabled: 1
+    path: Assets/Scenes/Dia 2 Limpiar.unity
+    guid: aac2688c72e4d6344b6b2a3db3ce5cc0
+  - enabled: 1
+    path: Assets/Scenes/Dia 4 Limpiar.unity
+    guid: 2407f885597798e4a8caeff412778445
   m_configObjects: {}
