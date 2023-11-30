@@ -159,9 +159,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5695429816548393288}
+  - component: {fileID: 32558939827571480}
   m_Layer: 5
   m_Name: Sencillo_Azul
-  m_TagString: Untagged
+  m_TagString: NormalAzul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,6 +190,21 @@ RectTransform:
   m_AnchoredPosition: {x: -798, y: 364}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &32558939827571480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6060603023164875810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc42946281dfef941afcd232e47226ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OrdenEstructura:
+    colorAlgodon: 0
+    formaAlgodon: 0
 --- !u!1 &6636008229637929246
 GameObject:
   m_ObjectHideFlags: 0

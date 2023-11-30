@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickHandler : MonoBehaviour
+public class PistaClick1 : MonoBehaviour
 {
     private int counter = 0;
 
@@ -18,7 +18,7 @@ public class ClickHandler : MonoBehaviour
                 if (hit.collider.CompareTag("Pista"))
                 {
                     // Increment the counter in the GameManager
-                    PistaSave.Instance.IncrementCounter();
+                    PistaSave1.Instance.IncrementCounter();
 
                     // Make the clicked object disappear
                     hit.collider.gameObject.SetActive(false);

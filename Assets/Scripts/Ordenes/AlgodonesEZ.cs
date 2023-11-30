@@ -5,14 +5,14 @@ using UnityEngine;
 [System.Serializable]
 public struct EstructuraAlgodon
 {
-    public Texture2D colorAlgodon;
-    public Mesh formaAlgodon;
+    public int colorAlgodon;
+    public int formaAlgodon;
 }
 public class AlgodonesEZ : MonoBehaviour
 {
     public ScriptAlgodon algodonPrefab;
 
-    ScriptAlgodon newAlgodon;
+    public ScriptAlgodon newAlgodon;
 
     public Transform[] posicion = new Transform[1];
    // public EstructuraAlgodon[] structArray = new EstructuraAlgodon[4];
@@ -41,7 +41,7 @@ public class AlgodonesEZ : MonoBehaviour
         Debug.Log("Ahora es Azul");
 
         /*algodonPrefab.texturaAlgodon = structArray[0].colorAlgodon;
-        algodonPrefab.algodonMat.SetTexture("_Base_Color_Texture", algodonPrefab.texturaAlgodon);
+        algodonPrefab.algodonMat.SetTexture("_Base_Color_Texture", algodonPrefab.texturaAlgodon); 
         // algodonPrefab.Forma = structArray[0].formaAlgodon;*/
 
         newAlgodon.CambiarTextura(selectedForma, 0);
@@ -67,8 +67,11 @@ public class AlgodonesEZ : MonoBehaviour
         /*algodonPrefab.texturaAlgodon = structArray[2].colorAlgodon;
         algodonPrefab.algodonMat.SetTexture("_Base_Color_Texture", algodonPrefab.texturaAlgodon);
         //algodonPrefab.Forma = structArray[2].formaAlgodon;*/
-
-        newAlgodon.CambiarTextura(selectedForma, 1);
+        if(newAlgodon != null)
+        {
+            newAlgodon.CambiarTextura(selectedForma, 1);
+        }
+        
     }
 
     public void GenerarAlgodon()
@@ -77,7 +80,7 @@ public class AlgodonesEZ : MonoBehaviour
         {
             newAlgodon = Instantiate(algodonPrefab, posicion[x]);
             newAlgodon.algodonMat.SetTexture("_Base_Color_Texture", newAlgodon.texturaAlgodon);
-            //newAlgodon.Forma.GetComponent<GameObject>();
+            //newAlgodon.Forma.GetComponent<GameObject>(); 
           
             newAlgodon.CambiarForma(selectedForma);
 
