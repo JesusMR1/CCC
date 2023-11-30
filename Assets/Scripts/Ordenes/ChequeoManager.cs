@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ChequeoManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ChequeoManager : MonoBehaviour
     [SerializeField] AlgodonesEZ refAlgodones;
 
     public int contadorAlgodones = 0;
+    public TMP_Text textoContador;
  
    
 
@@ -15,6 +17,7 @@ public class ChequeoManager : MonoBehaviour
     void Start()
     {
         contadorAlgodones = 0;
+        textoContador.text = contadorAlgodones + "/10";
     }
 
     // Update is called once per frame
@@ -40,7 +43,9 @@ public class ChequeoManager : MonoBehaviour
                 refOrdenes.ContadorOrdenes = 0;
 
                 contadorAlgodones++;
-            
+                textoContador.text = contadorAlgodones + "/10";
+
+
             }
             else
             {
