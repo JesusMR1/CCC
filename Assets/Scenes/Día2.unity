@@ -8468,6 +8468,7 @@ GameObject:
   - component: {fileID: 2026825050}
   - component: {fileID: 2026825049}
   - component: {fileID: 2026825048}
+  - component: {fileID: 2026825052}
   m_Layer: 5
   m_Name: BotonLimpiar
   m_TagString: Untagged
@@ -8519,9 +8520,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1555424247}
-        m_TargetAssemblyTypeName: EventosDia2, Assembly-CSharp
-        m_MethodName: FinDia
+      - m_Target: {fileID: 2026825052}
+        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8589,6 +8590,19 @@ RectTransform:
   m_AnchoredPosition: {x: 829, y: -450}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2026825052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026825047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98753276eb491fb43a671c9be72ee9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Dia 2 Limpiar
 --- !u!1 &2029340213
 GameObject:
   m_ObjectHideFlags: 0
