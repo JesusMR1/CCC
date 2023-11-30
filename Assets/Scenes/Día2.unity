@@ -1716,7 +1716,7 @@ PrefabInstance:
     - target: {fileID: 5494350818928863159, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
         type: 3}
       propertyPath: reachableNodes.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5494350818928863159, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
         type: 3}
@@ -5106,7 +5106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  timeUntilHourChange: 1
+  timeUntilHourChange: 70
   timeText: {fileID: 1172296671}
   timeLimit: 6
 --- !u!114 &1172296671

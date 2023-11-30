@@ -32,7 +32,7 @@ public class AdvanceTime : MonoBehaviour
 
     public IEnumerator AdvanceHourOverTime()
     {
-        yield return new WaitForSeconds(timeUntilHourChange);
+        yield return new WaitForSecondsRealtime(timeUntilHourChange);
 
         if (timeHours == 12)
         {
