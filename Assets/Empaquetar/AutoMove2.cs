@@ -1,10 +1,10 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 
-public class AutoMove : MonoBehaviour
+public class AutoMove2 : MonoBehaviour
 {
     private bool counterReachedTen = false;
 
@@ -12,7 +12,7 @@ public class AutoMove : MonoBehaviour
     public float speed = 2f; // Adjust the speed as needed
     public float distance = 5f; // Adjust the distance as needed
     public Canvas canvasToTurnOff; // Reference to the Canvas component
-    public ArrowCounter arrowCounter;
+    public ArrowGood arrowGood;
 
 
     private int direction = 1; // 1 for right, -1 for left
@@ -27,7 +27,7 @@ public class AutoMove : MonoBehaviour
         // Store the initial position of the object
         initialPosition = transform.position.x;
 
-        arrowCounter = FindObjectOfType<ArrowCounter>();
+        arrowGood = FindObjectOfType<ArrowGood>();
 
     }
 
@@ -72,9 +72,9 @@ public class AutoMove : MonoBehaviour
                 Debug.Log("Object is touching ArrowYes");
                 arrowYesCounter++;
                 // Call the method in the ArrowCounter script to increase the counter
-                if (arrowCounter != null)
+                if (arrowGood != null)
                 {
-                    arrowCounter.IncreaseArrowYesCounter();
+                    arrowGood.IncreaseArrowYesCounter();
                 }
 
 
@@ -114,10 +114,10 @@ public class AutoMove : MonoBehaviour
             canvasToTurnOff.gameObject.SetActive(false);
 
             // Reset the counter and speed
-            if (arrowCounter != null)
+            if (arrowGood != null)
             {
-                arrowCounter.ResetCounter();
-                SetSpeed(arrowCounter.BaseSpeed);
+                arrowGood.ResetCounter();
+                SetSpeed(arrowGood.BaseSpeed);
             }
 
             // Reset the object's position to the initial positio
