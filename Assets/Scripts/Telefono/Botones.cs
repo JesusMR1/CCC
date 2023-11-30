@@ -5,13 +5,11 @@ using UnityEngine;
 public class Botones : MonoBehaviour
 {
     public GameObject button1;
-    public GameObject button2;
 
     void Start()
     {
         // Initially, hide the button
         button1.SetActive(false);
-        button2.SetActive(false);
     }
 
     void OnMouseDown()
@@ -24,7 +22,6 @@ public class Botones : MonoBehaviour
         {
             // Toggle the visibility of the buttons
             button1.SetActive(!button1.activeSelf);
-            button2.SetActive(!button2.activeSelf);
         }
     }
 }
