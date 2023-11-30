@@ -32,7 +32,7 @@ public class AlgodonesEZ : MonoBehaviour
     {
         if (tag == "Nota")
         {
-            GenerarAlgodon();
+            //GenerarAlgodon();
         }
     }
 

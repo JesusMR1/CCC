@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class ArrowKeyGenerator : MonoBehaviour
 {
     public GameObject[] arrowKeyPrefabs; // Assign the arrow key prefabs in the Inspector.
+    public GameObject[] arrowKeySelected; // Assign the arrow key prefabs in the Inspector.
     public Transform arrowKeySpawnPoint; // Set the spawn point where arrow keys will appear.
 
     private bool canSpawn = true;
@@ -17,6 +19,8 @@ public class ArrowKeyGenerator : MonoBehaviour
     private List<ArrowKey> spawnedArrowKeys = new List<ArrowKey>(); // Keep track of spawned arrow keys.
     private int inputcount = 0;
     private bool hasMisinput = true;
+
+    public AlgodonesEZ refAlgodones;
     private void Start()
     {
         // Ensure you have assigned the arrow key prefabs and spawn point in the Inspector.
@@ -40,6 +44,7 @@ public class ArrowKeyGenerator : MonoBehaviour
     {
         if (canSpawn) // Detect left mouse button click and check if spawning is allowed.
         {
+          //SelectRandomArrows(4);
           GenerateArrowKeys();
         }
     }
@@ -47,6 +52,8 @@ public class ArrowKeyGenerator : MonoBehaviour
     private void GenerateArrowKeys()
     {
         float spacing = 0; // Initialize the spacing value.
+
+        ShuffleArray(arrowKeyPrefabs);
 
         foreach (GameObject arrowKeyPrefab in arrowKeyPrefabs)
         {
@@ -84,6 +91,8 @@ public class ArrowKeyGenerator : MonoBehaviour
                     canSpawn = true;
                     misinputs = 0; // Reset the misinput count when the combination is correct.
                     Debug.Log("Yay"); // Display "Yay" for a correct combination.
+
+                    
            
                 }
             }
@@ -127,6 +136,9 @@ public class ArrowKeyGenerator : MonoBehaviour
                     Debug.Log(spawnedArrowKeys.Count);
                     if (spawnedArrowKeys.Count == 0)
                     {
+                        ClearArrowKeys();
+                        refAlgodones.GenerarAlgodon();
+
                         Debug.Log("Yay");
                     }
                    // hasMisinput = false; 
@@ -215,4 +227,45 @@ public class ArrowKeyGenerator : MonoBehaviour
         misinputs = 0; // Reset the misinput count.
     }
 
+    /*void SelectRandomArrows(int count)
+    {
+        float spacing = 0; // Initialize the spacing value.
+
+        // Shuffle the array of game objects
+        ShuffleArray(arrowKeyPrefabs);
+
+        // Select a subset of the shuffled game objects
+        arrowKeySelected = arrowKeyPrefabs.Take(count).ToArray();
+
+        for (int i = 0; i < count; i++)
+        {
+
+            // Use the i-th spawn point
+            Transform spawnPoint = arrowKeySpawnPoint[i % arrowKeySpawnPoint.Length];
+
+            // Instantiate the selected GameObject at the spawn point
+            Instantiate(arrowKeyPrefabs[i], spawnPoint.position + Vector3.right * spacing, Quaternion.identity);
+
+            spacing += horizontalSpacing;
+            arrowKeyObject.SetActive(true);
+            spawnedArrowKeys.Add(arrowKeyObject.GetComponent<ArrowKey>());
+
+            canSpawn = false;
+        }
+    }*/
+    void ShuffleArray<T>(T[] array)
+    {
+        // Fisher-Yates shuffle algorithm
+        System.Random rand = new System.Random();
+        int n = array.Length;
+
+        for (int i = n - 1; i > 0; i--)
+        {
+            int j = rand.Next(0, i + 1);
+
+            T temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
 }

@@ -34,18 +34,24 @@ public class ChequeoManager : MonoBehaviour
                 Destroy(refAlgodones.newAlgodon.gameObject);
                 DestroyImmediate(refOrdenes.OrdenesCreadas[0].gameObject, true);
                 refOrdenes.OrdenesCreadas.RemoveAt(0);
+
+                refOrdenes.ContadorOrdenes = 0;
             
             }
             else
             {
                 Debug.Log("Orden InCorrecta");
-                
+                Destroy(refAlgodones.newAlgodon.gameObject);
+
+
             }
         }   
         else
         {
             Debug.Log("Orden InCorrecta");
-            
+            Destroy(refAlgodones.newAlgodon.gameObject);
+
+
         }
     }
 
