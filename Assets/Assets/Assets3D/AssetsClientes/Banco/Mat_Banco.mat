@@ -112,6 +112,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7ccfe646815de734ba761985b910ba1d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a615e737d7154f938b36ae5c7598e2ed_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 083343a3d03becc4aa834125c8e58300, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -200,6 +204,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _Has_Metal: 0
+    - _Has_emission: 0
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
