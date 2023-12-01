@@ -8,7 +8,7 @@ public class ButtonClickCounter : MonoBehaviour
     void Start()
     {
         // Ensure that the Button component is attached to the GameObject
-     /*   Button myButton = GetComponent<Button>();
+        Button myButton = GetComponent<Button>();
 
         if (myButton != null)
         {
@@ -19,7 +19,6 @@ public class ButtonClickCounter : MonoBehaviour
         {
             Debug.LogError("Button component not found on the GameObject!");
         }
-     */
     }
 
     // This method is called when the TextMeshPro button is clicked
