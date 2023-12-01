@@ -299,6 +299,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5633830880111584146, guid: 472e70cad758e484a8e52c51b63f9042,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633830880111584146, guid: 472e70cad758e484a8e52c51b63f9042,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633830880111584146, guid: 472e70cad758e484a8e52c51b63f9042,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633830880111584146, guid: 472e70cad758e484a8e52c51b63f9042,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -503,13 +518,13 @@ MonoBehaviour:
   - {fileID: 372249856}
   - {fileID: 1026672805}
   - {fileID: 1141493737}
-  - {fileID: 1141493737}
-  - {fileID: 1141493737}
-  - {fileID: 1141493737}
+  - {fileID: 1394590584}
+  - {fileID: 372249856}
+  - {fileID: 1026672805}
   - {fileID: 1141493737}
   arrowKeySelected: []
   arrowKeySpawnPoint: {fileID: 1780786973}
-  horizontalSpacing: 0.5
+  horizontalSpacing: 0.25
   refAlgodones: {fileID: 207873175}
 --- !u!1 &337260048
 GameObject:
@@ -540,7 +555,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2091530062}
   - {fileID: 1780786973}
   - {fileID: 1499670646}
   m_Father: {fileID: 0}
@@ -2386,6 +2400,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3358251333168228424, guid: 26fc905843ee7554aba8be30aeac2bc0,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358251333168228424, guid: 26fc905843ee7554aba8be30aeac2bc0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358251333168228424, guid: 26fc905843ee7554aba8be30aeac2bc0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358251333168228424, guid: 26fc905843ee7554aba8be30aeac2bc0,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4
       objectReference: {fileID: 0}
@@ -2866,6 +2895,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flechas (1)_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699044302339665635, guid: f18a05aff641b6d478614180a39d1e40,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699044302339665635, guid: f18a05aff641b6d478614180a39d1e40,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699044302339665635, guid: f18a05aff641b6d478614180a39d1e40,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7699044302339665635, guid: f18a05aff641b6d478614180a39d1e40,
         type: 3}
@@ -3354,7 +3398,7 @@ Transform:
   m_GameObject: {fileID: 1780786972}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.56, y: 1.15, z: 0}
+  m_LocalPosition: {x: -2.19, y: 1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3572,6 +3616,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4927401261582255046, guid: 482ec7c897ffa384088f046ecc49a8d4,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927401261582255046, guid: 482ec7c897ffa384088f046ecc49a8d4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927401261582255046, guid: 482ec7c897ffa384088f046ecc49a8d4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927401261582255046, guid: 482ec7c897ffa384088f046ecc49a8d4,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.95
       objectReference: {fileID: 0}
@@ -3753,59 +3812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Color: 0
---- !u!1 &2091530061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2091530062}
-  - component: {fileID: 2091530063}
-  m_Layer: 0
-  m_Name: FlechasControler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2091530062
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091530061}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 337260049}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2091530063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091530061}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13f4429987e8cf44ab183ce3f27400d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrowKeyPrefabs:
-  - {fileID: 1394590584}
-  - {fileID: 372249856}
-  - {fileID: 1026672805}
-  - {fileID: 1141493737}
-  arrowKeySelected: []
-  arrowKeySpawnPoint: {fileID: 0}
-  horizontalSpacing: 0.5
-  refAlgodones: {fileID: 207873175}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

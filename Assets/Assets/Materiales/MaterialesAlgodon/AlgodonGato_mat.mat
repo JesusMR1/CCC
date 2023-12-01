@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AlgodonGato_mat
-  m_Shader: {fileID: -6465566751694194690, guid: a9723a2fa99993b478065ab885ce0c31,
+  m_Shader: {fileID: -6465566751694194690, guid: 328c574a00b3a484a821cc22027798b8,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -53,7 +53,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_Color_Texture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 2041b3b5d08edec448f2cedba2e1867a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -101,7 +101,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0f67303f7e1639d43b0dbdd4295001c0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -110,6 +110,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Normal_Texture_Map:
         m_Texture: {fileID: 2800000, guid: 0f67303f7e1639d43b0dbdd4295001c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORM_Texture:
+        m_Texture: {fileID: 2800000, guid: 297aeb6dfbeca1a4a8bd996b3f0d8ccd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ORM_texture:
@@ -179,7 +183,9 @@ Material:
     - _Anisotropy: 0
     - _Base_Roughness: 0.75
     - _BlendMode: 0
+    - _Circle_Density: 2.63
     - _CoatMask: 0
+    - _Color_Contrast: 1
     - _Color_conntrast: 1
     - _Color_solid_overlay: 0
     - _ConservativeDepthOffsetEnable: 0
@@ -208,6 +214,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _Has_Ao: 1
+    - _Has_Metal: 0
     - _Has_color_texture: 1
     - _Has_normal_map_texture: 1
     - _HeightAmplitude: 0.02
@@ -230,7 +237,9 @@ Material:
     - _Metallic: 0
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
+    - _Metalness: 0
     - _No_metalic: 0
+    - _NormalIntensity: 1
     - _NormalMapSpace: 0
     - _NormalScale: 1
     - _Normal_string: 1
@@ -251,13 +260,23 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
+    - _RimLight_Brigthness: 2
+    - _RimPower: 5
+    - _Rim_Light_Length: 0.1
+    - _Rotate: 1
+    - _Rotation_Speed: 1
+    - _Roughness_Black: 0
     - _Roughness_Blend: 0.8
+    - _Roughness_Texture_Contrast: 1
+    - _Roughness_White: 1
     - _Roughness_black: 0
     - _Roughness_texture_contrast: 1
     - _Roughness_white: 1
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
+    - _Softness: 0
+    - _Solid_Color_Overlay: 0
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
@@ -287,6 +306,7 @@ Material:
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
+    - _USE_SCREEN_SPACE: 0
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
@@ -308,6 +328,9 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _Rim_Light_Color: {r: 1, g: 0, b: 0, a: 0}
+    - _ShadowColor: {r: 0.13333327, g: 0.27984607, b: 0.8196079, a: 0}
+    - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Solid_color: {r: 0.8693485, g: 0.885502, b: 0.9339623, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
