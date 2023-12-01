@@ -7043,9 +7043,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 790134260}
-  botonLimpiar: {fileID: 0}
-  botonInicioDia: {fileID: 0}
-  botonFinDia: {fileID: 0}
+  botonLimpiar: {fileID: 1769478425}
+  botonInicioDia: {fileID: 957359475}
+  botonFinDia: {fileID: 957359475}
   timer: {fileID: 0}
   advanceTime: {fileID: 1172296670}
 --- !u!1 &1651399550
