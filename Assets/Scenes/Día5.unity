@@ -3266,17 +3266,17 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowKeyPrefabs.Array.data[13]
       value: 
-      objectReference: {fileID: 1491303011}
+      objectReference: {fileID: 1553370667}
     - target: {fileID: 5084492119033698603, guid: 3b2d5b7662b57e44198eddad7331c3ce,
         type: 3}
       propertyPath: arrowKeyPrefabs.Array.data[14]
       value: 
-      objectReference: {fileID: 538183973}
+      objectReference: {fileID: 1491303011}
     - target: {fileID: 5084492119033698603, guid: 3b2d5b7662b57e44198eddad7331c3ce,
         type: 3}
       propertyPath: arrowKeyPrefabs.Array.data[15]
       value: 
-      objectReference: {fileID: 1553370667}
+      objectReference: {fileID: 538183973}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3533,7 +3533,7 @@ PrefabInstance:
     - target: {fileID: 6878358670075489973, guid: f93204fae2dc83f4d873466d7bc20d27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.376
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 6878358670075489973, guid: f93204fae2dc83f4d873466d7bc20d27,
         type: 3}
@@ -3760,7 +3760,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.14202756, y: 0.06388607, z: 0.13507624}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &572718053
+--- !u!114 &572718054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3769,13 +3769,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 572718050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3881e19a93d0bd4f9895c2ac24c617c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c909f087bba2d346a855ae769d961f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   refOrdenes: {fileID: 66282589}
   refAlgodones: {fileID: 816382700}
   contadorAlgodones: 0
   textoContador: {fileID: 1968797872}
+  yourTextMeshProButton: {fileID: 245425001}
   refContador: {fileID: 1221233215}
 --- !u!1 &579921633
 GameObject:
@@ -5914,10 +5915,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4919687365320633958, guid: 9459f3eeefdeca74cb3a22610c2acb70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4943517212781193258, guid: 9459f3eeefdeca74cb3a22610c2acb70,
         type: 3}
       propertyPath: m_Name
       value: Botones
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025876191278600972, guid: 9459f3eeefdeca74cb3a22610c2acb70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162082329128693671, guid: 9459f3eeefdeca74cb3a22610c2acb70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9147,7 +9163,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30c2e407dfe3b1749b7d32a1c5baa2f1,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 572718053}
+      addedObject: {fileID: 572718054}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30c2e407dfe3b1749b7d32a1c5baa2f1,
         type: 3}
       insertIndex: -1
