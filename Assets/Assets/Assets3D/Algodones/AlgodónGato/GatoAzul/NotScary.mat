@@ -171,7 +171,7 @@ Material:
     - _Anisotropy: 0
     - _Base_Roughness: 0.15
     - _BlendMode: 0
-    - _Circle_Density: 2.63
+    - _Circle_Density: 12.9
     - _CoatMask: 0
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
@@ -301,8 +301,8 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Rim_Light_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _ShadowColor: {r: 0.13333327, g: 0.27984607, b: 0.8196079, a: 0}
+    - _Rim_Light_Color: {r: 0.764151, g: 0.7093628, b: 0.7093628, a: 0}
+    - _ShadowColor: {r: 0.32601118, g: 0.05254536, b: 0.33962262, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
