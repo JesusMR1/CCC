@@ -2010,7 +2010,7 @@ MonoBehaviour:
   buttons:
   - {fileID: 1769478428}
   firstObject: {fileID: 988498605}
-  secondObject: {fileID: 1688985029}
+  secondObject: {fileID: 957359475}
   newButton: {fileID: 2108359566}
 --- !u!1 &399544648
 GameObject:

@@ -721,7 +721,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1063,6 +1063,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   percentageText: {fileID: 0}
   increaseSpeed: 30
+--- !u!1 &190023657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292109924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190023660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190023657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1de419eea0ad6d4c85952af54883016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refOrdenes: {fileID: 1770085287}
+  refAlgodones: {fileID: 1916885919}
+  contadorAlgodones: 0
+  textoContador: {fileID: 541390684}
+  yourTextMeshProButton: {fileID: 2026825048}
+  refContador: {fileID: 1221233215}
 --- !u!1 &206333197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,10 +5638,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2362863929598716917, guid: d161a3b0e184f0540aba0a2c02221af1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 190023660}
   m_SourcePrefab: {fileID: 100100000, guid: d161a3b0e184f0540aba0a2c02221af1, type: 3}
 --- !u!4 &1292109925 stripped
 Transform:
@@ -10082,6 +10111,18 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!114 &1770085287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4356072846689516468, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292109924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ae01987e314d94590ce59220cf4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1809976053
 GameObject:
   m_ObjectHideFlags: 0

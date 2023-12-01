@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 
 
-public class CheckManDay2 : MonoBehaviour
+public class CheckManDay4 : MonoBehaviour
 {
 
 
@@ -23,11 +23,11 @@ public class CheckManDay2 : MonoBehaviour
 
 
 
-    // Start is called before the first frame upda
+    // Start is called before the first frame upd
     void Start()
     {
         contadorAlgodones = 0;
-        textoContador.text = contadorAlgodones + "/30";
+        textoContador.text = contadorAlgodones + "/35";
         yourTextMeshProButton.gameObject.SetActive(false); // Initially hide the button
 
     }
@@ -60,12 +60,12 @@ public class CheckManDay2 : MonoBehaviour
 
                 {
                     // Assuming contadorAlgodones is a variable that gets updated somewhere in your code
-                    if (contadorAlgodones <= 30)
+                    if (contadorAlgodones <= 35)
                     {
-                        textoContador.text = contadorAlgodones + "/30";
+                        textoContador.text = contadorAlgodones + "/35";
 
                         // Enable the canvas when contadorAlgodones reaches 10
-                        if (contadorAlgodones == 30)
+                        if (contadorAlgodones == 35)
                         {
                             yourTextMeshProButton.gameObject.SetActive(true);
 
@@ -95,7 +95,7 @@ public class CheckManDay2 : MonoBehaviour
 
     void UpdateCounterText()
     {
-        textoContador.text = contadorAlgodones + "/30";
+        textoContador.text = contadorAlgodones + "/35";
     }
 
     private void OnMouseDown()
