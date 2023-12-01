@@ -10,6 +10,8 @@ public class ChequeoManager : MonoBehaviour
 
     public int contadorAlgodones = 0;
     public TMP_Text textoContador;
+
+    public ContadorOrdenes refContador;
  
    
 
@@ -41,6 +43,7 @@ public class ChequeoManager : MonoBehaviour
                 refOrdenes.OrdenesCreadas.RemoveAt(0);
 
                 refOrdenes.ContadorOrdenes = 0;
+                refContador.contadorOrdenes = 0;
 
                 contadorAlgodones++;
                 
