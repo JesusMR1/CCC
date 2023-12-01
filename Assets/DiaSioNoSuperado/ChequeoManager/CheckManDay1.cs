@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 
 
-public class CheckManDay2 : MonoBehaviour
+public class CheckManDay1 : MonoBehaviour
 {
 
 
@@ -27,7 +27,7 @@ public class CheckManDay2 : MonoBehaviour
     void Start()
     {
         contadorAlgodones = 0;
-        textoContador.text = contadorAlgodones + "/20";
+        textoContador.text = contadorAlgodones + "/10";
         yourTextMeshProButton.gameObject.SetActive(false); // Initially hide the button
 
     }
@@ -60,12 +60,12 @@ public class CheckManDay2 : MonoBehaviour
 
                 {
                     // Assuming contadorAlgodones is a variable that gets updated somewhere in your code
-                    if (contadorAlgodones <= 20)
+                    if (contadorAlgodones <= 10)
                     {
-                        textoContador.text = contadorAlgodones + "/20";
+                        textoContador.text = contadorAlgodones + "/10";
 
                         // Enable the canvas when contadorAlgodones reaches 10
-                        if (contadorAlgodones == 20)
+                        if (contadorAlgodones == 10)
                         {
                             yourTextMeshProButton.gameObject.SetActive(true);
 
