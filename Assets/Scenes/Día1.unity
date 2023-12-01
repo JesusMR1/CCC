@@ -5958,6 +5958,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 60606875324882165, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4392737116374415114, guid: 002000f9090fe7b4e994e89e600e75f3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -6006,6 +6011,21 @@ PrefabInstance:
     - target: {fileID: 4992480611509725089, guid: 002000f9090fe7b4e994e89e600e75f3,
         type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992480611509725089, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992480611509725089, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992480611509725089, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4992480611509725089, guid: 002000f9090fe7b4e994e89e600e75f3,
@@ -6088,6 +6108,21 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 1046213759}
+    - target: {fileID: 7616337912758097640, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1046213759}
+    - target: {fileID: 7616337912758097640, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616337912758097640, guid: 002000f9090fe7b4e994e89e600e75f3,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

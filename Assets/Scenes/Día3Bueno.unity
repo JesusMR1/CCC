@@ -3914,7 +3914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &788711098
 Transform:
   m_ObjectHideFlags: 0
@@ -7180,6 +7180,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524135491}
   m_CullTransparentMesh: 1
+--- !u!4 &1527802358 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+    type: 3}
+  m_PrefabInstance: {fileID: 2120902877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1534061633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6379906126135670293, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
@@ -8909,6 +8915,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1509027753}
+  - {fileID: 1527802358}
   - {fileID: 788711098}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10126,6 +10133,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2120902877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1917567904}
+    m_Modifications:
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637143906350130338, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579730123426682045, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_Name
+      value: Jefe
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f246b31e5fe334740a3e3edd09852635, type: 3}
 --- !u!1 &2135628793
 GameObject:
   m_ObjectHideFlags: 0
@@ -10537,7 +10612,8 @@ PrefabInstance:
       propertyPath: m_ColorTemperature
       value: 4151
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 386295495226613721, guid: 9cbe946c39ea158439b2d338cfd53cab, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1769247601036971704, guid: 9cbe946c39ea158439b2d338cfd53cab,

@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 790134260}
-  sceneToLoad: "D\xEDa6"
+  sceneToLoad: "D\xEDa5"
 --- !u!1 &263708707
 GameObject:
   m_ObjectHideFlags: 0
