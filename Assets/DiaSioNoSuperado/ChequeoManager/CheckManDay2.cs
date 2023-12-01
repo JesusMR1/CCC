@@ -95,7 +95,7 @@ public class CheckManDay2 : MonoBehaviour
 
     void UpdateCounterText()
     {
-        textoContador.text = contadorAlgodones + "/10";
+        textoContador.text = contadorAlgodones + "/20";
     }
 
     private void OnMouseDown()
