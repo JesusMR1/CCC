@@ -1502,7 +1502,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 439642540}
   - {fileID: 1028940075}
   - {fileID: 1548591802}
   m_Father: {fileID: 0}
@@ -4880,8 +4879,8 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
         type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 190023660}
+      insertIndex: -1
+      addedObject: {fileID: 1596840569}
   m_SourcePrefab: {fileID: 100100000, guid: d161a3b0e184f0540aba0a2c02221af1, type: 3}
 --- !u!4 &1292109925 stripped
 Transform:
@@ -5768,6 +5767,30 @@ MonoBehaviour:
   botonFinDia: {fileID: 245425000}
   timer: {fileID: 1172296668}
   advanceTime: {fileID: 1172296670}
+--- !u!1 &1596840564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292109924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596840569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596840564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1de419eea0ad6d4c85952af54883016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refOrdenes: {fileID: 1890750141}
+  refAlgodones: {fileID: 1916885919}
+  contadorAlgodones: 0
+  textoContador: {fileID: 1028940076}
+  yourTextMeshProButton: {fileID: 2026825048}
+  refContador: {fileID: 1221233215}
 --- !u!1 &1651399550
 GameObject:
   m_ObjectHideFlags: 0
@@ -9439,6 +9462,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882387618}
   m_CullTransparentMesh: 1
+--- !u!114 &1890750141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4356072846689516468, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292109924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ae01987e314d94590ce59220cf4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1915156307
 GameObject:
   m_ObjectHideFlags: 0
@@ -10878,3 +10913,5 @@ SceneRoots:
   - {fileID: 1662628992}
   - {fileID: 1169117442}
   - {fileID: 1217793942665309288}
+  - {fileID: 1195562062}
+  - {fileID: 372927967}
