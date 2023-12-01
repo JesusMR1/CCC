@@ -2219,7 +2219,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 4941849bb675ad4469b3784843b1aa1c, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 24e77b45249cb6d4891830bf4bfb11a5, type: 2}
 --- !u!4 &364192610
 Transform:
   m_ObjectHideFlags: 0
@@ -2233,7 +2233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1911911043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &399544648
 GameObject:
@@ -8883,9 +8883,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1769247601036971704, guid: 98fa2344476344243832ea28b58f438f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364192610}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98fa2344476344243832ea28b58f438f, type: 3}
+--- !u!4 &1911911043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1769247601036971704, guid: 98fa2344476344243832ea28b58f438f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1911911042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1915156307
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,5 +10291,4 @@ SceneRoots:
   - {fileID: 2064253058}
   - {fileID: 1208169475}
   - {fileID: 1911911042}
-  - {fileID: 364192610}
   - {fileID: 1062528732}
