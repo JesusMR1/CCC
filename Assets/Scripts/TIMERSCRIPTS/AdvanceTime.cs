@@ -15,6 +15,8 @@ public class AdvanceTime : MonoBehaviour
     [NonSerialized] public int timeHours;
 
     private bool isTimeLimitReached = false;
+
+    public ChequeoManager refContador;
     public void Start()
     {
         timeHours = startingTime;
@@ -53,6 +55,11 @@ public class AdvanceTime : MonoBehaviour
             yield return new WaitForSeconds(3f);
             timeText.gameObject.SetActive(false);
             isTimeLimitReached = true;
+
+            if(refContador.contadorAlgodones <= 10)
+            {
+                Debug.Log("ReinciciaDia");
+            }
         }
     }
 }

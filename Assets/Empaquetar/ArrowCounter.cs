@@ -2,23 +2,22 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class ArrowCounter : MonoBehaviour
 {
-
     public TextMeshProUGUI counterText;
     private int arrowYesCounter = 0;
     private int maxCounter = 10;
     public float baseSpeed = 2.0f; // Initialize with the desired value
     public float speedIncreaseFactor = 0.5f; // Adjust as needed
 
+    public RawImage spookyImage;
+
     public AudioClip freezeSound;
-    public float freezeDuration = 6f; // Duration to freeze the screen in seconds
+    public float freezeDuration = 2f; // Duration to freeze the screen in seconds
     private float timeCounter = 0f;
     private bool isFrozen = false;
-
-
 
     public float BaseSpeed
     {
@@ -27,6 +26,8 @@ public class ArrowCounter : MonoBehaviour
 
     void Start()
     {
+        spookyImage.enabled = false;
+
         // Set the initial speed of the arrow
         AutoMove autoMoveScript = GetComponent<AutoMove>();
         if (autoMoveScript != null)
@@ -51,6 +52,16 @@ public class ArrowCounter : MonoBehaviour
             if (!isFrozen)
             {
                 Debug.Log("Counter reached 10. Freezing screen for 3 seconds.");
+
+                if (GetComponent<AudioSource>() != null && freezeSound != null)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(freezeSound);
+                }
+
+                // Enable the spookyImage after playing the sound
+                spookyImage.enabled = true;
+
+                // Start freezing coroutine
                 StartCoroutine(FreezeScreen());
             }
         }
@@ -71,13 +82,11 @@ public class ArrowCounter : MonoBehaviour
         }
     }
 
-
     public void ResetCounter()
     {
         arrowYesCounter = 0;
         counterText.text = arrowYesCounter + " / " + maxCounter;
     }
-
 
     IEnumerator FreezeScreen()
     {
@@ -85,10 +94,7 @@ public class ArrowCounter : MonoBehaviour
         Time.timeScale = 0f; // Set time scale to 0 to freeze the screen
 
         // Play the freeze sound (assuming you have an AudioSource component attached to the same GameObject)
-        if (GetComponent<AudioSource>() != null && freezeSound != null)
-        {
-            GetComponent<AudioSource>().PlayOneShot(freezeSound);
-        }
+     
 
         // Wait for the specified duration (6 seconds in this case)
         yield return new WaitForSecondsRealtime(freezeDuration);
@@ -106,5 +112,3 @@ public class ArrowCounter : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 }
-
-
