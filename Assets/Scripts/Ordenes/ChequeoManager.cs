@@ -74,4 +74,11 @@ public class ChequeoManager : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        if (tag == "EntregarOrdenes")
+        {
+            CompararOrdenes();
+        }
+    }
 }
