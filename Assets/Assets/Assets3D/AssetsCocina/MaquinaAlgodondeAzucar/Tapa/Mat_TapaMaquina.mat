@@ -289,7 +289,7 @@ Material:
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _Rim_Light_Color: {r: 0.13020645, g: 0.8962264, b: 0.8462999, a: 0}
-    - _ShadowColor: {r: 0.8490566, g: 0.09932356, b: 0.6005265, a: 0}
+    - _ShadowColor: {r: 0.4339623, g: 0.15720895, b: 0.34171113, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
