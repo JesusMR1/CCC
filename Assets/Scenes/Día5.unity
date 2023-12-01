@@ -3195,7 +3195,7 @@ PrefabInstance:
     - target: {fileID: 5084492119033698603, guid: 3b2d5b7662b57e44198eddad7331c3ce,
         type: 3}
       propertyPath: arrowKeyPrefabs.Array.size
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5084492119033698603, guid: 3b2d5b7662b57e44198eddad7331c3ce,
         type: 3}
@@ -3533,7 +3533,7 @@ PrefabInstance:
     - target: {fileID: 6878358670075489973, guid: f93204fae2dc83f4d873466d7bc20d27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 6878358670075489973, guid: f93204fae2dc83f4d873466d7bc20d27,
         type: 3}
