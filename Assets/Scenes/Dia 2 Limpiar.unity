@@ -9713,7 +9713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 1692980019}
-  sceneToLoad: "D\xEDa3"
+  sceneToLoad: "D\xEDa3Malo"
 --- !u!114 &2108359566
 MonoBehaviour:
   m_ObjectHideFlags: 0
