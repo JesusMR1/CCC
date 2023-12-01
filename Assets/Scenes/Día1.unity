@@ -1663,12 +1663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3c2e67ff088e446bb424092e295c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refOrdenes: {fileID: 1840463768}
-  refAlgodones: {fileID: 1267008794}
-  contadorAlgodones: 0
-  textoContador: {fileID: 1480308950}
-  yourTextMeshProButton: {fileID: 2026825048}
-  refContador: {fileID: 1221233215}
 --- !u!1 &699383993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4637,18 +4631,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816776721}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1840463768 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4356072846689516468, guid: d161a3b0e184f0540aba0a2c02221af1,
-    type: 3}
-  m_PrefabInstance: {fileID: 8153816701205895141}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53ae01987e314d94590ce59220cf4745, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1857379830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,7 +5111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2026825048
 MonoBehaviour:
   m_ObjectHideFlags: 0
