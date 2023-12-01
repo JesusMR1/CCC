@@ -2,32 +2,25 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class ArrowCounter : MonoBehaviour
 {
-
     public TextMeshProUGUI counterText;
     private int arrowYesCounter = 0;
     private int maxCounter = 10;
-    public float baseSpeed = 2.0f; // Initialize with the desired value
-    public float speedIncreaseFactor = 0.5f; // Adjust as needed
+    public float baseSpeed = 2.0f;
+    public float speedIncreaseFactor = 0.5f;
 
     public AudioClip freezeSound;
-    public float freezeDuration = 6f; // Duration to freeze the screen in seconds
+    public float freezeDuration = 6f;
     private float timeCounter = 0f;
     private bool isFrozen = false;
 
-
-
-    public float BaseSpeed
-    {
-        get { return baseSpeed; }
-    }
+    private RawImage freezeImage; // Reference to the RawImage component
 
     void Start()
     {
-        // Set the initial speed of the arrow
         AutoMove autoMoveScript = GetComponent<AutoMove>();
         if (autoMoveScript != null)
         {
@@ -38,14 +31,9 @@ public class ArrowCounter : MonoBehaviour
     public void IncreaseArrowYesCounter()
     {
         arrowYesCounter++;
-
-        // Ensure the counter does not exceed the maximum value
         arrowYesCounter = Mathf.Clamp(arrowYesCounter, 0, maxCounter);
-
-        // Update the TextMeshProUGUI text
         counterText.text = arrowYesCounter + " / " + maxCounter;
 
-        // Check if the counter has reached 10 before adjusting the speed
         if (arrowYesCounter >= maxCounter)
         {
             if (!isFrozen)
@@ -56,13 +44,9 @@ public class ArrowCounter : MonoBehaviour
         }
         else
         {
-            // Adjust the speed based on the counter and speedIncreaseFactor
             float newSpeed = baseSpeed + arrowYesCounter * speedIncreaseFactor;
-
-            // Log the new speed to check if it's being calculated correctly
             Debug.Log("New Speed: " + newSpeed);
 
-            // Apply the new speed to the arrow
             AutoMove autoMoveScript = GetComponent<AutoMove>();
             if (autoMoveScript != null)
             {
@@ -71,33 +55,43 @@ public class ArrowCounter : MonoBehaviour
         }
     }
 
-
     public void ResetCounter()
     {
         arrowYesCounter = 0;
         counterText.text = arrowYesCounter + " / " + maxCounter;
     }
 
+    public void SetFreezeImage(RawImage rawImage)
+    {
+        freezeImage = rawImage;
+    }
+
+    public void DisplayFreezeImage(Texture imageTexture)
+    {
+        if (freezeImage != null && imageTexture != null)
+        {
+            freezeImage.texture = imageTexture;
+        }
+    }
 
     IEnumerator FreezeScreen()
     {
         isFrozen = true;
-        Time.timeScale = 0f; // Set time scale to 0 to freeze the screen
+        Time.timeScale = 0f;
 
-        // Play the freeze sound (assuming you have an AudioSource component attached to the same GameObject)
+        // Display the freeze image using the public function
+        DisplayFreezeImage(freezeImage.texture);
+
         if (GetComponent<AudioSource>() != null && freezeSound != null)
         {
             GetComponent<AudioSource>().PlayOneShot(freezeSound);
         }
 
-        // Wait for the specified duration (6 seconds in this case)
         yield return new WaitForSecondsRealtime(freezeDuration);
 
-        // Unfreeze the screen
         Time.timeScale = 1f;
         isFrozen = false;
 
-        // Transition to the specified scene
         TransitionToScene("MainMenuV2Final");
     }
 
@@ -106,5 +100,3 @@ public class ArrowCounter : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 }
-
-
