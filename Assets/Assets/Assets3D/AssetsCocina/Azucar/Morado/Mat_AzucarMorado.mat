@@ -301,8 +301,8 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Rim_Light_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _ShadowColor: {r: 0.13333327, g: 0.27984607, b: 0.8196079, a: 0}
+    - _Rim_Light_Color: {r: 0.95214605, g: 0, b: 1, a: 0}
+    - _ShadowColor: {r: 0.34117648, g: 0.9921569, b: 0.9921569, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
