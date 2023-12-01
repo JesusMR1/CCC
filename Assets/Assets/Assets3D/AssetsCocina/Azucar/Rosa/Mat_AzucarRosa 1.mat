@@ -253,7 +253,7 @@ Material:
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _Softness: 0
-    - _Solid_Color_Overlay: 0
+    - _Solid_Color_Overlay: 0.76
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
@@ -306,7 +306,7 @@ Material:
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _Rim_Light_Color: {r: 0.90543216, g: 0.1254902, b: 0.9254902, a: 0}
     - _ShadowColor: {r: 0.3529412, g: 0.9960785, b: 0.9960785, a: 0}
-    - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Solid_Color: {r: 0.9150943, g: 0.21927728, b: 0.6006871, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
