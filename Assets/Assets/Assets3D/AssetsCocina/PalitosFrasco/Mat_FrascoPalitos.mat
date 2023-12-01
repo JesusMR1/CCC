@@ -241,7 +241,7 @@ Material:
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
     - _RimLight_Brigthness: 2
-    - _RimPower: 5
+    - _RimPower: 3.05
     - _Rim_Light_Length: 0.1
     - _Rotate: 0
     - _Rotation_Speed: 1
@@ -304,8 +304,8 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Rim_Light_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _ShadowColor: {r: 0.13333327, g: 0.27984607, b: 0.8196079, a: 0}
+    - _Rim_Light_Color: {r: 0.14556777, g: 0.85583556, b: 0.8867924, a: 0}
+    - _ShadowColor: {r: 0.9245283, g: 0.099430345, b: 0.66992635, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}

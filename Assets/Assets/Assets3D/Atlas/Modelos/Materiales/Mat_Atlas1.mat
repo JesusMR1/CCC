@@ -62,9 +62,9 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _Base_Roughness: 0.15
+    - _Base_Roughness: 0.58
     - _BlendMode: 0
-    - _Circle_Density: 2.63
+    - _Circle_Density: 0.36
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
@@ -79,7 +79,7 @@ Material:
     - _Has_Metal: 0
     - _Hue: 0
     - _Metalness: 0
-    - _NormalIntensity: 1
+    - _NormalIntensity: 2.6
     - _OpaqueCullMode: 2
     - _RayTracing: 0
     - _ReceivesSSR: 1
@@ -90,11 +90,13 @@ Material:
     - _RimLight_Brigthness: 2
     - _RimPower: 5
     - _Rim_Light_Length: 0.1
+    - _Rotate: 0
+    - _Rotation_Speed: 1
     - _Roughness_Black: 0
     - _Roughness_Blend: 1
-    - _Roughness_Texture_Contrast: 1
+    - _Roughness_Texture_Contrast: 2.6
     - _Roughness_White: 1
-    - _Softness: 0
+    - _Softness: 0.31
     - _Solid_Color_Overlay: 0
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -125,8 +127,8 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Rim_Light_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _ShadowColor: {r: 0.13333327, g: 0.27984607, b: 0.8196079, a: 0}
+    - _Rim_Light_Color: {r: 1, g: 0.7411765, b: 1, a: 0}
+    - _ShadowColor: {r: 0.4467426, g: 0.8867924, b: 0.8192887, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2857056050146847156

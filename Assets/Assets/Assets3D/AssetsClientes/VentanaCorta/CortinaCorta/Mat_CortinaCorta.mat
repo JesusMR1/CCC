@@ -171,7 +171,7 @@ Material:
     - _Anisotropy: 0
     - _Base_Roughness: 0.15
     - _BlendMode: 0
-    - _Circle_Density: 2.63
+    - _Circle_Density: 3.83
     - _CoatMask: 0
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
@@ -240,6 +240,8 @@ Material:
     - _RimLight_Brigthness: 2
     - _RimPower: 5
     - _Rim_Light_Length: 0.1
+    - _Rotate: 0
+    - _Rotation_Speed: 1
     - _Roughness_Black: 0
     - _Roughness_Blend: 1
     - _Roughness_Texture_Contrast: 1
@@ -247,7 +249,7 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
-    - _Softness: 0
+    - _Softness: 0.51
     - _Solid_Color_Overlay: 0
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
@@ -299,8 +301,8 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Rim_Light_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _ShadowColor: {r: 0.13333327, g: 0.27984607, b: 0.8196079, a: 0}
+    - _Rim_Light_Color: {r: 1, g: 0.7607844, b: 1, a: 0}
+    - _ShadowColor: {r: 0.39607847, g: 0.5882353, b: 0.69803923, a: 0}
     - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
