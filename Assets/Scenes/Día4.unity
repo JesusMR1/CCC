@@ -2700,7 +2700,7 @@ MonoBehaviour:
   refOrdenes: {fileID: 66282589}
   refAlgodones: {fileID: 816382700}
   contadorAlgodones: 0
-  textoContador: {fileID: 1968797872}
+  textoContador: {fileID: 1152879653}
   yourTextMeshProButton: {fileID: 2026825048}
   refContador: {fileID: 1221233215}
 --- !u!1 &579921633
@@ -3181,7 +3181,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textoContador
       value: 
-      objectReference: {fileID: 1968797872}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9252,7 +9252,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 994877944035583757, guid: 9c1f3e3ba94c10c478361e6e2220d7b7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1f3e3ba94c10c478361e6e2220d7b7, type: 3}
@@ -9262,18 +9263,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 419899620}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1968797872 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2442572042967415946, guid: 9c1f3e3ba94c10c478361e6e2220d7b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1946693246}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1983028756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6379906126135670293, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
