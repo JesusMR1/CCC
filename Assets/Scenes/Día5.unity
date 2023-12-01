@@ -7055,6 +7055,7 @@ MonoBehaviour:
   timeUntilHourChange: 1
   timeText: {fileID: 1172296671}
   timeLimit: 6
+  refContador: {fileID: 91483845}
 --- !u!114 &1172296671
 MonoBehaviour:
   m_ObjectHideFlags: 0
