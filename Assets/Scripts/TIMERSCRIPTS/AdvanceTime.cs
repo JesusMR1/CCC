@@ -16,7 +16,7 @@ public class AdvanceTime : MonoBehaviour
 
     private bool isTimeLimitReached = false;
 
-    public CheckManDay1 refContador;
+    public CheckManDay2 refContador;
     public void Start()
     {
         timeHours = startingTime;
