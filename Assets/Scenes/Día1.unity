@@ -1660,9 +1660,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 680896267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba3c2e67ff088e446bb424092e295c97, type: 3}
+  m_Script: {fileID: 11500000, guid: f1de419eea0ad6d4c85952af54883016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  refOrdenes: {fileID: 1044532027}
+  refAlgodones: {fileID: 1267008794}
+  contadorAlgodones: 0
+  textoContador: {fileID: 1480308950}
+  yourTextMeshProButton: {fileID: 2026825048}
+  refContador: {fileID: 1221233215}
 --- !u!1 &699383993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +2443,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1505158259}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1044532027 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4356072846689516468, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8153816701205895141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ae01987e314d94590ce59220cf4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1046213757
 GameObject:
   m_ObjectHideFlags: 0
