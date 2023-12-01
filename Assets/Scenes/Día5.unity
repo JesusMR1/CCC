@@ -995,6 +995,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108761014}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &110633557
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2165686958718045678, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_Name
+      value: InteractuablesCocina
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362863929598716917, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1778606406}
+  m_SourcePrefab: {fileID: 100100000, guid: d161a3b0e184f0540aba0a2c02221af1, type: 3}
 --- !u!1 &166097309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,6 +4698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Botones
       objectReference: {fileID: 0}
+    - target: {fileID: 4943517212781193258, guid: 9459f3eeefdeca74cb3a22610c2acb70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7025876191278600972, guid: 9459f3eeefdeca74cb3a22610c2acb70,
         type: 3}
       propertyPath: m_IsActive
@@ -7963,6 +8045,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1319480638}
+--- !u!1 &1778606404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 110633557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778606406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778606404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c909f087bba2d346a855ae769d961f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refOrdenes: {fileID: 66282589}
+  refAlgodones: {fileID: 816382700}
+  contadorAlgodones: 0
+  textoContador: {fileID: 1968797872}
+  yourTextMeshProButton: {fileID: 245425001}
+  refContador: {fileID: 1221233215}
 --- !u!1 &1786332693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 62472e4045e991c4397e96a6785916b8,
@@ -10207,6 +10313,7 @@ SceneRoots:
   - {fileID: 1874744226}
   - {fileID: 1195418878}
   - {fileID: 585544617}
+  - {fileID: 110633557}
   - {fileID: 829570203}
   - {fileID: 518921688}
   - {fileID: 1946693246}
