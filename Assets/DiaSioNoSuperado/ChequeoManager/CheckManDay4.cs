@@ -27,7 +27,7 @@ public class CheckManDay4 : MonoBehaviour
     void Start()
     {
         contadorAlgodones = 0;
-        textoContador.text = contadorAlgodones + "/35";
+        textoContador.text = contadorAlgodones + "/25";
         yourTextMeshProButton.gameObject.SetActive(false); // Initially hide the button
 
     }
@@ -60,12 +60,12 @@ public class CheckManDay4 : MonoBehaviour
 
                 {
                     // Assuming contadorAlgodones is a variable that gets updated somewhere in your code
-                    if (contadorAlgodones <= 35)
+                    if (contadorAlgodones <= 25)
                     {
-                        textoContador.text = contadorAlgodones + "/35";
+                        textoContador.text = contadorAlgodones + "/25";
 
                         // Enable the canvas when contadorAlgodones reaches 10
-                        if (contadorAlgodones == 35)
+                        if (contadorAlgodones == 25)
                         {
                             yourTextMeshProButton.gameObject.SetActive(true);
 
@@ -95,7 +95,7 @@ public class CheckManDay4 : MonoBehaviour
 
     void UpdateCounterText()
     {
-        textoContador.text = contadorAlgodones + "/35";
+        textoContador.text = contadorAlgodones + "/25";
     }
 
     private void OnMouseDown()
