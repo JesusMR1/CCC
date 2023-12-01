@@ -2700,7 +2700,7 @@ MonoBehaviour:
   refOrdenes: {fileID: 66282589}
   refAlgodones: {fileID: 816382700}
   contadorAlgodones: 0
-  textoContador: {fileID: 1968797872}
+  textoContador: {fileID: 1152879653}
   yourTextMeshProButton: {fileID: 2026825048}
   refContador: {fileID: 1221233215}
 --- !u!1 &579921633
@@ -2779,6 +2779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OtrosBotone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841190092769745362, guid: d56de2e7524e956448d06feceaeac6fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2371988145048566175, guid: d56de2e7524e956448d06feceaeac6fa,
         type: 3}
@@ -3181,7 +3186,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textoContador
       value: 
-      objectReference: {fileID: 1968797872}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3202,7 +3207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &591684877
 Transform:
   m_ObjectHideFlags: 0
@@ -4393,6 +4398,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4375085697972116019, guid: 9459f3eeefdeca74cb3a22610c2acb70,
         type: 3}
       insertIndex: 0
+      addedObject: {fileID: 1547516868}
+    - targetCorrespondingSourceObject: {fileID: 4375085697972116019, guid: 9459f3eeefdeca74cb3a22610c2acb70,
+        type: 3}
+      insertIndex: 1
       addedObject: {fileID: 591684877}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9459f3eeefdeca74cb3a22610c2acb70, type: 3}
@@ -5178,6 +5187,98 @@ RectTransform:
   m_AnchoredPosition: {x: -818, y: 397}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1022678814
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 900544732}
+    m_Modifications:
+    - target: {fileID: 2165686958718045678, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_Name
+      value: InteractuablesCocina
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362863929598716917, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362863929598716917, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: refContador
+      value: 
+      objectReference: {fileID: 1221233215}
+    - target: {fileID: 2362863929598716917, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: refAlgodones
+      value: 
+      objectReference: {fileID: 816382700}
+    - target: {fileID: 2362863929598716917, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: textoContador
+      value: 
+      objectReference: {fileID: 1152879653}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1189828653}
+  m_SourcePrefab: {fileID: 100100000, guid: d161a3b0e184f0540aba0a2c02221af1, type: 3}
 --- !u!1 &1046213757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,6 +6082,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172296668}
   m_CullTransparentMesh: 1
+--- !u!1 &1189828647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1141351574946264499, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022678814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1189828653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189828647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c418cb18fd4038d4a8d4bc2102696c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refOrdenes: {fileID: 66282589}
+  refAlgodones: {fileID: 816382700}
+  contadorAlgodones: 0
+  textoContador: {fileID: 1152879653}
+  yourTextMeshProButton: {fileID: 2026825048}
+  refContador: {fileID: 1221233215}
 --- !u!1001 &1195418878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7131,6 +7256,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543454449}
   m_CullTransparentMesh: 1
+--- !u!4 &1547516868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4459972963557032161, guid: d161a3b0e184f0540aba0a2c02221af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022678814}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1553370667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8928311847570570837, guid: f93204fae2dc83f4d873466d7bc20d27,
@@ -9252,7 +9383,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 994877944035583757, guid: 9c1f3e3ba94c10c478361e6e2220d7b7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1f3e3ba94c10c478361e6e2220d7b7, type: 3}
@@ -9262,18 +9394,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 419899620}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1968797872 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2442572042967415946, guid: 9c1f3e3ba94c10c478361e6e2220d7b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1946693246}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1983028756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6379906126135670293, guid: a4bff11a5aeabdf4bb9ba758c498fc9b,
