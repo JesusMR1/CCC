@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.368
+    m_Value: 0.091
   m_MaxSamples:
     m_OverrideState: 1
     m_Value: 3
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Value: 3
   intensity:
     m_OverrideState: 1
-    m_Value: 0.869
+    m_Value: 0.261
   response:
     m_OverrideState: 1
     m_Value: 0.79
@@ -116,7 +116,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.121
+    m_Value: 0.023
   scatter:
     m_OverrideState: 1
     m_Value: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
     m_Value: {fileID: 2800000, guid: a345f85c561875d49bd82b7af88154e7, type: 3}
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 6.42
+    m_Value: 5.96
   anamorphic:
     m_OverrideState: 0
     m_Value: 1
