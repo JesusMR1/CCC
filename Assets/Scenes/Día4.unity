@@ -1157,9 +1157,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 8b15b5e103f44914ea9a2c1035da09e5,
+    m_HighlightedSprite: {fileID: 21300000, guid: e876baa5ae0b1e540997779ff02a0c0d,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 49cbd5a47cf3ac04dbf87e910dc3b983, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 8050d81e5cfbcd74991cbd7016f3e161, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b4ccbcc981d86954c98cabf5bd1c293e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0320bce6f8469de48ae147cd1f1979a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 588685454}
-  sceneToLoad: "D\xEDa5"
+  sceneToLoad: Dia 4 Limpiar
 --- !u!1 &265342159
 GameObject:
   m_ObjectHideFlags: 0
