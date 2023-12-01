@@ -1505,7 +1505,7 @@ Transform:
   m_GameObject: {fileID: 554074080}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: 7}
+  m_LocalPosition: {x: 3.63, y: 1, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1581,14 +1581,13 @@ GameObject:
   - component: {fileID: 604777058}
   - component: {fileID: 604777061}
   - component: {fileID: 604777060}
-  - component: {fileID: 604777059}
   m_Layer: 5
   m_Name: Reloj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &604777058
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1608,23 +1607,6 @@ RectTransform:
   m_AnchoredPosition: {x: -519, y: 419}
   m_SizeDelta: {x: 920, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &604777059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604777057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08459d7187bc76140ada21a72b4f223d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTime: 12
-  timeUntilHourChange: 1
-  timeText: {fileID: 1172296671}
-  timeLimit: 6
-  refContador: {fileID: 0}
 --- !u!114 &604777060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2919,7 +2901,7 @@ MonoBehaviour:
   timeUntilHourChange: 1
   timeText: {fileID: 1172296671}
   timeLimit: 6
-  refContador: {fileID: 0}
+  refContador: {fileID: 680896273}
 --- !u!114 &1172296671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,7 +3530,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: edb8b9c9e1796d649bfab8aa63cddcef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: edb8b9c9e1796d649bfab8aa63cddcef,
         type: 3}
@@ -3558,7 +3540,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: edb8b9c9e1796d649bfab8aa63cddcef,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.64
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: edb8b9c9e1796d649bfab8aa63cddcef,
         type: 3}
