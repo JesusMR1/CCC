@@ -73,6 +73,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: e3718525ec8bbc348ad45dbd5a130c87, type: 3}
   - {fileID: 2800000, guid: a56b99e5da7a98f4ca8f7ad5b7baa867, type: 3}
   - {fileID: 2800000, guid: 80fa874a0af85ca468a53e6cf85e976e, type: 3}
+  InstanciaEstructura:
+    colorAlgodon: 0
+    formaAlgodon: 0
 --- !u!1001 &1334850971071441242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,7 +207,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 04bdac82a6caf1149bd7f46e5ea3395f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.003236115
+      value: 0.408
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 04bdac82a6caf1149bd7f46e5ea3395f,
         type: 3}
@@ -309,7 +312,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c9346a31a3210914399b8f4c638163f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.431
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c9346a31a3210914399b8f4c638163f6,
         type: 3}
@@ -414,7 +417,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 872e30dff01e7d84eb61f61bbd34df8b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0.931
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 872e30dff01e7d84eb61f61bbd34df8b,
         type: 3}
