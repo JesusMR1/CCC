@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 525471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1549324, y: 0.39209026, z: 1.1549324}
+  m_LocalScale: {x: 1.3182398, y: 0.44753182, z: 1.3182398}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790134259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 104, y: 0}
+  m_AnchoredPosition: {x: 174, y: 0}
   m_SizeDelta: {x: 1300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &525473
@@ -5598,7 +5598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  timeUntilHourChange: 15
+  timeUntilHourChange: 1
   timeText: {fileID: 1172296671}
   timeLimit: 6
   refContador: {fileID: 0}
