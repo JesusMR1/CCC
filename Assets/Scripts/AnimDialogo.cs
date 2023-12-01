@@ -15,8 +15,8 @@ public class AnimDialogo : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         anim.SetTrigger("Llega");
         StartCoroutine(SeVa());
-    }   
-    
+    }
+
     IEnumerator SeVa()
     {
         yield return new WaitForSeconds(5f);
