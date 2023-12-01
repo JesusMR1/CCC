@@ -324,6 +324,7 @@ GameObject:
   - component: {fileID: 128784317}
   - component: {fileID: 128784319}
   - component: {fileID: 128784318}
+  - component: {fileID: 128784320}
   m_Layer: 0
   m_Name: Lampara
   m_TagString: Untagged
@@ -530,6 +531,19 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &128784320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128784316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d674514e41aa0dc4780dd01642f5d567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeDelay: 0
 --- !u!1 &163836733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,6 +3099,7 @@ GameObject:
   - component: {fileID: 832179140}
   - component: {fileID: 832179142}
   - component: {fileID: 832179143}
+  - component: {fileID: 832179144}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3314,6 +3329,19 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!114 &832179144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832179139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d674514e41aa0dc4780dd01642f5d567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeDelay: 0
 --- !u!1001 &867441946
 PrefabInstance:
   m_ObjectHideFlags: 0
