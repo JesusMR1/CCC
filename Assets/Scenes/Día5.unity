@@ -7337,7 +7337,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3a5997e5717584e4fa493120bd317a87, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7401,7 +7401,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.53125, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1172296672
@@ -11013,6 +11013,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442572042967415946, guid: 9c1f3e3ba94c10c478361e6e2220d7b7,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3a5997e5717584e4fa493120bd317a87,
+        type: 2}
+    - target: {fileID: 2442572042967415946, guid: 9c1f3e3ba94c10c478361e6e2220d7b7,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1616162079679165305, guid: 3a5997e5717584e4fa493120bd317a87,
+        type: 2}
+    - target: {fileID: 2442572042967415946, guid: 9c1f3e3ba94c10c478361e6e2220d7b7,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5924414164796817084, guid: 9c1f3e3ba94c10c478361e6e2220d7b7,
         type: 3}
