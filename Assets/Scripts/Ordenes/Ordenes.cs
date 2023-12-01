@@ -75,5 +75,11 @@ public class Ordenes : MonoBehaviour
         }
     }
 
-
+    private void OnMouseDown()
+    {
+        if (tag == "ClienteOrden")
+        {
+            SelectRandomOrdenes(1);
+        }
+    }
 }
