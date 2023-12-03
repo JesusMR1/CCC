@@ -972,16 +972,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799939142}
-  m_LocalRotation: {x: -0, y: -0, z: -0.05543157, w: 0.9984625}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0574118, w: 0.99835056}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.26256, y: 1.26256, z: 1.26256}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 863809112}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.583}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 157, y: 55}
+  m_AnchoredPosition: {x: 159, y: 56}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799939144
@@ -1004,12 +1004,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xBFBuscas empleo?\nRumores comentan que hay una nueva vacante en la gran
-    tienda de los reyes del algod\xF3n de az\xFAcar, se dice que el \xFAltimo trabajador
-    no logr\xF3 alcanzar el potencial esperado por lo que fue removido del puesto.
-    No dudes en unirte a la familia.\n\nEn otras noticias, contin\xFAan los asesinatos
-    del 83, hasta el momento no hay sospechosos. Si sabe o ha visto algo contacte
-    a la polic\xEDa."
+  m_text: "El reci\xE9n contratado empleado de CCC ha sido declarado culpable por
+    los recientes asesinatos del 83.\r\n\nDeclaran los reyes del gran imperio despu\xE9s
+    de m\xFAltiples eventos sospechosos y prueban en contra de su ex-empleado pues
+    entre sus pertenencias fue hallado un collar de perlas el cu\xE1l pertenec\xEDa
+    a una de las v\xEDctimas.\r\nSin m\xE1s, los fundadores lo vuelven a hacer trayendo
+    felicidad y dulzura al pueblo. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a5997e5717584e4fa493120bd317a87, type: 2}
   m_sharedMaterial: {fileID: -1616162079679165305, guid: 3a5997e5717584e4fa493120bd317a87,
