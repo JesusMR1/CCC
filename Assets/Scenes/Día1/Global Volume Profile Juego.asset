@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.091
+    m_Value: 0.14
   m_MaxSamples:
     m_OverrideState: 1
     m_Value: 3
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Value: 3
   intensity:
     m_OverrideState: 1
-    m_Value: 0.261
+    m_Value: 0.62
   response:
     m_OverrideState: 1
     m_Value: 0.79
