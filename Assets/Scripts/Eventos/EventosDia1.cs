@@ -13,6 +13,9 @@ public class EventosDia1 : MonoBehaviour
     public GameObject botonLimpiar;
     public GameObject botonFinDia;
 
+    public GameObject timer;
+
+
     public GameObject reiniciarDia;
     public GameObject pasarDia;
     public CheckManDay2 refContador;
@@ -44,6 +47,13 @@ public class EventosDia1 : MonoBehaviour
             }
         }
     }
+
+    public void Timer()
+    {
+        timer.SetActive(true);
+    }
+
+
 
     IEnumerator BotonLimpiar()
     {
