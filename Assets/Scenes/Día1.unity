@@ -607,12 +607,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &72049780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8232144647543666742, guid: 1d46a0a1da960cf4aab4d082f4c02ccb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1296230187676714414}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &108761014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,7 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  timeUntilHourChange: 1
+  timeUntilHourChange: 20
   timeText: {fileID: 1172296671}
   timeLimit: 6
   refContador: {fileID: 680896273}
@@ -3766,6 +3760,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424762321}
   m_CullTransparentMesh: 1
+--- !u!1 &1445136737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 307006264805585009, guid: 1d46a0a1da960cf4aab4d082f4c02ccb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1296230187676714414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1480308948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,7 +4492,9 @@ MonoBehaviour:
   animDialogo: {fileID: 1555424246}
   botonLimpiar: {fileID: 2026825047}
   botonFinDia: {fileID: 245425000}
-  reiniciarDia: {fileID: 1935022256}
+
+  reiniciarDia: {fileID: 1445136737}
+
   pasarDia: {fileID: 1288270008}
   refContador: {fileID: 680896273}
 --- !u!114 &1628794465 stripped
