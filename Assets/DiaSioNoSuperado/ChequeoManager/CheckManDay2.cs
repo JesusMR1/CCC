@@ -91,7 +91,7 @@ public class CheckManDay2 : MonoBehaviour
         else
         {
             Debug.Log("Orden InCorrecta");
-            refAudio.PlaySFX(refAudio.recibirOrden);
+            refAudio.PlaySFX(refAudio.entregarOrdenMal);
 
             Destroy(refAlgodones.newAlgodon.gameObject);
 
