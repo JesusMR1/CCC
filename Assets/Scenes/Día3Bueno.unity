@@ -3179,6 +3179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luz: {fileID: 348044072}
   timeDelay: 0
+  lightfail: {fileID: 0}
 --- !u!4 &626565388
 Transform:
   m_ObjectHideFlags: 0
@@ -11574,6 +11575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jefe
       objectReference: {fileID: 0}
+    - target: {fileID: 9006348619286118812, guid: f246b31e5fe334740a3e3edd09852635,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5eca8865211dc6746a513c171ba1ff50, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

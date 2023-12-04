@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class CheckManDay2 : MonoBehaviour
 {
 
-
+    public AudioManager refAudio;
 
     [SerializeField] Ordenes refOrdenes;
     [SerializeField] AlgodonesEZ refAlgodones;
@@ -48,6 +48,8 @@ public class CheckManDay2 : MonoBehaviour
             if (refOrdenes.OrdenesCreadas[0].OrdenEstructura.colorAlgodon == refAlgodones.newAlgodon.InstanciaEstructura.colorAlgodon)
             {
                 Debug.Log("Orden Correcta");
+                refAudio.PlaySFX(refAudio.entregarOrdenBien);
+
                 Destroy(refAlgodones.newAlgodon.gameObject);
                 DestroyImmediate(refOrdenes.OrdenesCreadas[0].gameObject, true);
                 refOrdenes.OrdenesCreadas.RemoveAt(0);
@@ -79,6 +81,8 @@ public class CheckManDay2 : MonoBehaviour
             else
             {
                 Debug.Log("Orden InCorrecta");
+                refAudio.PlaySFX(refAudio.entregarOrdenMal);
+
                 Destroy(refAlgodones.newAlgodon.gameObject);
 
 
@@ -87,6 +91,8 @@ public class CheckManDay2 : MonoBehaviour
         else
         {
             Debug.Log("Orden InCorrecta");
+            refAudio.PlaySFX(refAudio.entregarOrdenMal);
+
             Destroy(refAlgodones.newAlgodon.gameObject);
 
 

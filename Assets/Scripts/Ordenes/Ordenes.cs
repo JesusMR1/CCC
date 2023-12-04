@@ -17,6 +17,8 @@ public class Ordenes : MonoBehaviour
 
     public int ContadorOrdenes = 0;
 
+    public AudioManager refAudio;
+
     void Start()
     {
     }
@@ -80,6 +82,7 @@ public class Ordenes : MonoBehaviour
         if (tag == "ClienteOrden")
         {
             SelectRandomOrdenes(1);
+            refAudio.PlaySFX(refAudio.recibirOrden);
         }
     }
 }
