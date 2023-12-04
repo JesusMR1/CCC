@@ -12,6 +12,14 @@ public class EventosDia1 : MonoBehaviour
 
     public GameObject botonLimpiar;
     public GameObject botonFinDia;
+
+    public GameObject timer;
+
+
+    public GameObject reiniciarDia;
+    public GameObject pasarDia;
+    public CheckManDay2 refContador;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +36,24 @@ public class EventosDia1 : MonoBehaviour
     {
         if (advanceTime.timeHours == advanceTime.timeLimit)
         {
-            animDialogo.Mensaje();
-            StartCoroutine(BotonLimpiar());
+            if (refContador.contadorAlgodones < 20)
+            {
+                reiniciarDia.SetActive(true);
+                Debug.Log("ReinciciaDia");
+            }
+            else if (refContador.contadorAlgodones >= 20)
+            {
+                pasarDia.SetActive(true);
+            }
         }
     }
+
+    public void Timer()
+    {
+        timer.SetActive(true);
+    }
+
+
 
     IEnumerator BotonLimpiar()
     {

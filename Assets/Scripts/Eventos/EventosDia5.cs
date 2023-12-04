@@ -15,6 +15,10 @@ public class EventosDia5 : MonoBehaviour
 
     public AdvanceTime advanceTime;
 
+    public GameObject reiniciarDia;
+    public GameObject pasarDia;
+    public CheckManDay4 refContador;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +53,22 @@ public class EventosDia5 : MonoBehaviour
     {
         if (advanceTime.timeHours == advanceTime.timeLimit)
         {
-            botonLimpiar.SetActive(true);
+            if (advanceTime.timeHours == advanceTime.timeLimit)
+            {
+                if (advanceTime.timeHours == advanceTime.timeLimit)
+                {
+                    if (refContador.contadorAlgodones < 25)
+                    {
+                        reiniciarDia.SetActive(true);
+                        Debug.Log("ReinciciaDia");
+                    }
+                    else if (refContador.contadorAlgodones >= 25)
+                    {
+                        pasarDia.SetActive(true);
+                    }
+                }
+
+            }
         }
     }
 

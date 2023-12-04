@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class CheckManDay2 : MonoBehaviour
 {
 
-
+    public AudioManager refAudio;
 
     [SerializeField] Ordenes refOrdenes;
     [SerializeField] AlgodonesEZ refAlgodones;
@@ -16,7 +16,7 @@ public class CheckManDay2 : MonoBehaviour
     public int contadorAlgodones = 0;
     public TMP_Text textoContador;
 
-    [SerializeField] Button yourTextMeshProButton; // Reference to your TextMeshPro button
+    //[SerializeField] Button yourTextMeshProButton; // Reference to your TextMeshPro button
 
 
     public ContadorOrdenes refContador;
@@ -28,7 +28,7 @@ public class CheckManDay2 : MonoBehaviour
     {
         contadorAlgodones = 0;
         textoContador.text = contadorAlgodones + "/20";
-        yourTextMeshProButton.gameObject.SetActive(false); // Initially hide the button
+        //yourTextMeshProButton.gameObject.SetActive(false); // Initially hide the button
 
     }
 
@@ -48,6 +48,8 @@ public class CheckManDay2 : MonoBehaviour
             if (refOrdenes.OrdenesCreadas[0].OrdenEstructura.colorAlgodon == refAlgodones.newAlgodon.InstanciaEstructura.colorAlgodon)
             {
                 Debug.Log("Orden Correcta");
+                refAudio.PlaySFX(refAudio.entregarOrdenBien);
+
                 Destroy(refAlgodones.newAlgodon.gameObject);
                 DestroyImmediate(refOrdenes.OrdenesCreadas[0].gameObject, true);
                 refOrdenes.OrdenesCreadas.RemoveAt(0);
@@ -65,9 +67,9 @@ public class CheckManDay2 : MonoBehaviour
                         textoContador.text = contadorAlgodones + "/20";
 
                         // Enable the canvas when contadorAlgodones reaches 10
-                        if (contadorAlgodones == 20)
+                        if (contadorAlgodones >= 20)
                         {
-                            yourTextMeshProButton.gameObject.SetActive(true);
+                            textoContador.text = "OVERTIME";
 
                         }
                     }
@@ -79,6 +81,8 @@ public class CheckManDay2 : MonoBehaviour
             else
             {
                 Debug.Log("Orden InCorrecta");
+                refAudio.PlaySFX(refAudio.entregarOrdenMal);
+
                 Destroy(refAlgodones.newAlgodon.gameObject);
 
 
@@ -87,6 +91,8 @@ public class CheckManDay2 : MonoBehaviour
         else
         {
             Debug.Log("Orden InCorrecta");
+            refAudio.PlaySFX(refAudio.entregarOrdenMal);
+
             Destroy(refAlgodones.newAlgodon.gameObject);
 
 

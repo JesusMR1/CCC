@@ -5,6 +5,9 @@ public class ButtonClickCounter : MonoBehaviour
 {
     private int clickCount = 0;  // Counter for button clicks
 
+    public AudioManager refAudio;
+
+
     void Start()
     {
         // Ensure that the Button component is attached to the GameObject
@@ -24,6 +27,8 @@ public class ButtonClickCounter : MonoBehaviour
     // This method is called when the TextMeshPro button is clicked
     void OnClick()
     {
+        refAudio.PlaySFX(refAudio.limpiar);
+
         clickCount++;  // Increment the click count
         Debug.Log("Click Count: " + clickCount);
 

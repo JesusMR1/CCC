@@ -6,6 +6,7 @@ public class PistaClick1 : MonoBehaviour
 {
     private int counter = 0;
 
+    public AudioManager refAudio;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -19,6 +20,7 @@ public class PistaClick1 : MonoBehaviour
                 {
                     // Increment the counter in the GameManager
                     PistaSave1.Instance.IncrementCounter();
+                    refAudio.PlaySFX(refAudio.pistaPeriodico);
 
                     // Make the clicked object disappear
                     hit.collider.gameObject.SetActive(false);

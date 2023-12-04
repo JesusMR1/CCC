@@ -79,7 +79,6 @@ public class DialogoJefe : MonoBehaviour
     {
         yield return new WaitForSeconds(0.55f);
         botonEstacion.SetActive(true);
-        Tiempo.SetActive(true);
         jefe.SetActive(false);
      
     }
