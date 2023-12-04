@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -3208,6 +3208,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 446707176}
     m_Modifications:
+    - target: {fileID: 3369160507587613284, guid: 0c2618d899ae1d746b742850138db0be,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 1046213759}
     - target: {fileID: 3974224106583956280, guid: 0c2618d899ae1d746b742850138db0be,
         type: 3}
       propertyPath: m_IsActive
@@ -6404,7 +6409,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 24e77b45249cb6d4891830bf4bfb11a5, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 4e01b3431cacc5048984db47e7c187c7, type: 2}
 --- !u!1 &1065741246
 GameObject:
   m_ObjectHideFlags: 0
@@ -7834,7 +7839,7 @@ RectTransform:
   m_GameObject: {fileID: 1382892961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.149, y: 4.298, z: 2.149}
+  m_LocalScale: {x: 2.9660497, y: 5.9320993, z: 2.9660497}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 418882101}
@@ -7874,9 +7879,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 737fa2c71d0b0574ba63d1cae62e4dc9,
+    m_HighlightedSprite: {fileID: 21300000, guid: e8548cf65bd374c42878bfc436154919,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 11862450b2a72ed458089ec9783c4425, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d12c549f0f92db54a9ed49606a16b40b, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -7946,7 +7951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2ded8f312065f78409c03e2c5a80f40e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1126cb58577586349a75902394da415c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
