@@ -6499,7 +6499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  timeUntilHourChange: 1
+  timeUntilHourChange: 35
   timeText: {fileID: 1172296671}
   timeLimit: 6
   refContador: {fileID: 0}

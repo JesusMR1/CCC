@@ -2934,7 +2934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  timeUntilHourChange: 5
+  timeUntilHourChange: 20
   timeText: {fileID: 1172296671}
   timeLimit: 6
   refContador: {fileID: 680896273}
