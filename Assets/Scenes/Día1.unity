@@ -4492,7 +4492,9 @@ MonoBehaviour:
   animDialogo: {fileID: 1555424246}
   botonLimpiar: {fileID: 2026825047}
   botonFinDia: {fileID: 245425000}
+
   reiniciarDia: {fileID: 1445136737}
+
   pasarDia: {fileID: 1288270008}
   refContador: {fileID: 680896273}
 --- !u!114 &1628794465 stripped
@@ -5135,6 +5137,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925922693}
   m_CullTransparentMesh: 1
+--- !u!1 &1935022256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 307006264805585009, guid: 1d46a0a1da960cf4aab4d082f4c02ccb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1296230187676714414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943911832
 GameObject:
   m_ObjectHideFlags: 0
