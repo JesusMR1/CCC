@@ -13,8 +13,13 @@ public class ArrowCounter : MonoBehaviour
     public float speedIncreaseFactor = 0.5f; // Adjust as needed
 
     public RawImage spookyImage;
+    public RawImage black;
 
+    public int first=0;
+
+    public AudioSource blackout;
     public AudioClip freezeSound;
+    public AudioSource bgm;
     public float freezeDuration = 2f; // Duration to freeze the screen in seconds
     private float timeCounter = 0f;
     private bool isFrozen = false;
@@ -26,6 +31,8 @@ public class ArrowCounter : MonoBehaviour
 
     void Start()
     {
+        first = 0;
+        black.enabled = false;
         spookyImage.enabled = false;
 
         // Set the initial speed of the arrow
@@ -52,17 +59,14 @@ public class ArrowCounter : MonoBehaviour
             if (!isFrozen)
             {
                 Debug.Log("Counter reached 10. Freezing screen for 3 seconds.");
-
-                if (GetComponent<AudioSource>() != null && freezeSound != null)
+                bgm.Pause();
+                first ++;
+                if (first == 1)
                 {
-                    GetComponent<AudioSource>().PlayOneShot(freezeSound);
+                    StartCoroutine("Blackout");
+                    black.enabled = true;
+                    blackout.Play();
                 }
-
-                // Enable the spookyImage after playing the sound
-                spookyImage.enabled = true;
-
-                // Start freezing coroutine
-                StartCoroutine(FreezeScreen());
             }
         }
         else
@@ -81,20 +85,40 @@ public class ArrowCounter : MonoBehaviour
             }
         }
     }
+    private void Update()
+    {
+        if (first == 2)
+        {
+            black.enabled = false;
+            if (!isFrozen)
+            {
+                if (GetComponent<AudioSource>() != null && freezeSound != null)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(freezeSound);
+                }
+
+                // Enable the spookyImage after playing the sound
+                Debug.Log("Componentgot");
+                spookyImage.enabled = true;
+
+                // Start freezing coroutine
+                StartCoroutine(FreezeScreen());
+            }
+        }
+    }
 
     public void ResetCounter()
     {
         arrowYesCounter = 0;
         counterText.text = arrowYesCounter + " / " + maxCounter;
     }
-
     IEnumerator FreezeScreen()
     {
         isFrozen = true;
         Time.timeScale = 0f; // Set time scale to 0 to freeze the screen
 
         // Play the freeze sound (assuming you have an AudioSource component attached to the same GameObject)
-     
+
 
         // Wait for the specified duration (6 seconds in this case)
         yield return new WaitForSecondsRealtime(freezeDuration);
@@ -106,6 +130,12 @@ public class ArrowCounter : MonoBehaviour
         // Transition to the specified scene
         TransitionToScene("MainMenuV2Final");
     }
+    IEnumerator Blackout()
+    {
+        yield return new WaitForSecondsRealtime(4f);
+        first ++;
+    }
+
 
     void TransitionToScene(string sceneName)
     {
