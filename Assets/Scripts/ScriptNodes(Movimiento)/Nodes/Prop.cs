@@ -6,7 +6,6 @@ public class Prop : Node
 {
     public Location loc;
     Interactable inter;
-
     private void Start()
     {
         inter = GetComponent<Interactable>();
