@@ -65,7 +65,7 @@ public class CheckManDay2 : MonoBehaviour
                         textoContador.text = contadorAlgodones + "/20";
 
                         // Enable the canvas when contadorAlgodones reaches 10
-                        if (contadorAlgodones == 20)
+                        if (contadorAlgodones >= 20)
                         {
                             textoContador.text = "OVERTIME";
 

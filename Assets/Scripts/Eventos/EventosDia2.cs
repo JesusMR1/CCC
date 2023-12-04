@@ -15,6 +15,10 @@ public class EventosDia2 : MonoBehaviour
 
     public AdvanceTime advanceTime;
 
+    public GameObject reiniciarDia;
+    public GameObject pasarDia;
+    public CheckManDay2 refContador;
+
     void Start()
     {
         MensajeJefe();
@@ -48,7 +52,19 @@ public class EventosDia2 : MonoBehaviour
     {
         if (advanceTime.timeHours == advanceTime.timeLimit)
         {
-            botonLimpiar.SetActive(true);
+            if (advanceTime.timeHours == advanceTime.timeLimit)
+            {
+                if (refContador.contadorAlgodones < 20)
+                {
+                    reiniciarDia.SetActive(true);
+                    Debug.Log("ReinciciaDia");
+                }
+                else if (refContador.contadorAlgodones >= 20)
+                {
+                    pasarDia.SetActive(true);
+                }
+            }
+            
         }
     }
 
