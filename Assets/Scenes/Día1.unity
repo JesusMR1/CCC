@@ -6391,6 +6391,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 825090180579647511, guid: b3ccdf3d88a51f344be66d1698c9d7b7,
+        type: 3}
+      propertyPath: crearAlgodon
+      value: 
+      objectReference: {fileID: 8300000, guid: 970e570e24d3f174c8d53a35a65a7994, type: 3}
     - target: {fileID: 1668198604376538195, guid: b3ccdf3d88a51f344be66d1698c9d7b7,
         type: 3}
       propertyPath: m_LocalPosition.x

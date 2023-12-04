@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     //audio clip
 
     public AudioClip recibirOrden;
+    public AudioClip crearAlgodon;
     public AudioClip entregarOrdenBien;
     public AudioClip entregarOrdenMal;
     public AudioClip seleccionarAzucar;
