@@ -49,6 +49,7 @@ public class AdvanceTime : MonoBehaviour
         {
             StartCoroutine(AdvanceHourOverTime());
         }
+
         else
         {
             // The time limit has been reached. Wait for 3 seconds and then hide the text.
@@ -56,7 +57,7 @@ public class AdvanceTime : MonoBehaviour
             timeText.gameObject.SetActive(false);
             isTimeLimitReached = true;
 
-            if(refContador.contadorAlgodones <= 10)
+            if(refContador.contadorAlgodones < 20)
             {
                 Debug.Log("ReinciciaDia");
             }
