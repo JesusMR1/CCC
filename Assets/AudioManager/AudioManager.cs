@@ -10,17 +10,13 @@ public class AudioManager : MonoBehaviour
 
     //audio clip
 
-    public AudioClip background;
-    public AudioClip death;
-    public AudioClip checkpoint;
-    //more public sound clips
-
-
-    private void Start()
-    {
-        musicSource.clip = background;
-        musicSource.Play();
-    }
+    public AudioClip recibirOrden;
+    public AudioClip entregarOrdenBien;
+    public AudioClip entregarOrdenMal;
+    public AudioClip seleccionarAzucar;
+    public AudioClip limpiar;
+    public AudioClip pistaPeriodico;
+    public AudioClip llamar;
 
     public void PlaySFX(AudioClip clip)
     {

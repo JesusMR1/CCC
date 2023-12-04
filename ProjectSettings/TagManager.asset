@@ -26,6 +26,7 @@ TagManager:
   - PayasoMorado
   - ClienteOrden
   - EntregarOrdenes
+  - Audio
   layers:
   - Default
   - TransparentFX
