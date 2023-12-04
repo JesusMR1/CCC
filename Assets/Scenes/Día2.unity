@@ -1407,6 +1407,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3399268902187112756, guid: 1d46a0a1da960cf4aab4d082f4c02ccb,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 1046213759}
     - target: {fileID: 4978829986671317190, guid: 1d46a0a1da960cf4aab4d082f4c02ccb,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1959,6 +1964,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73177404}
     m_Modifications:
+    - target: {fileID: 3369160507587613284, guid: 0c2618d899ae1d746b742850138db0be,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 1046213759}
     - target: {fileID: 3974224106583956280, guid: 0c2618d899ae1d746b742850138db0be,
         type: 3}
       propertyPath: m_IsActive
@@ -2871,7 +2881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &772775381
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5658,6 +5668,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5211745751409522755, guid: fa679436eedae904e91b45df7595683a,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 1046213759}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
