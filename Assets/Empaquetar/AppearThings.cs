@@ -3,6 +3,7 @@ using UnityEngine;
 public class AppearThings : MonoBehaviour
 {
     public GameObject objectToActivate; // Reference to the object to activate
+    public AudioSource move;
 
     private void OnMouseDown()
     {
@@ -11,6 +12,7 @@ public class AppearThings : MonoBehaviour
         {
             // Activate the specified object
             objectToActivate.SetActive(true);
+            move.Play();
         }
     }
 }
